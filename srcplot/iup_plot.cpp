@@ -3307,6 +3307,277 @@ static void iPlotSetClassUpdate(Iclass* ic)
       IupSetLanguageString("IUP_ANGLE", "√Ångulo:");
     }
   }
+  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
+  {
+    IupSetLanguageString("IUP_EXPORT", "Exportovat");
+    IupSetLanguageString("IUP_COPY", "KopÌrovat");
+    IupSetLanguageString("IUP_PRINTDLG", "Tisk...");
+
+    IupSetLanguageString("IUP_ZOOMINAC", "PriblÌzit\t+");
+    IupSetLanguageString("IUP_ZOOMOUTAC", "Odd·lit\t-");
+    IupSetLanguageString("IUP_RESETZOOMAC", "ZobrazenÌ 1:1\t.");
+    IupSetLanguageString("IUP_SHOWHIDELEGEND", "Zobrazit/skr˝t legendu");
+    IupSetLanguageString("IUP_SHOWHIDEGRID", "Zobrazit/skr˝t mrÌzku");
+
+    IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Neplatn˝ vzorec.");
+
+    IupSetLanguageString("IUP_PROPERTIESDLG", "Vlastnosti...");
+    IupSetLanguageString("IUP_DATASETPROPERTIESDLG", "Vlastnosti datovÈ sady...");
+    IupSetLanguageString("IUP_DATASETVALUESDLG", "Hodnoty datovÈ sady...");
+
+    IupSetLanguageString("IUP_NAME", "N·zev:");
+    IupSetLanguageString("IUP_COLOR", "Barva:");
+    IupSetLanguageString("IUP_MODE", "MÛd");
+    IupSetLanguageString("IUP_LINES", "C·ry");
+    IupSetLanguageString("IUP_MARKS", "Znacky");
+    IupSetLanguageString("IUP_MARKSLINES", "Znacky a c·ry");
+    IupSetLanguageString("IUP_BARS", "Sloupce");
+    IupSetLanguageString("IUP_AREA", "Plocha");
+    IupSetLanguageString("IUP_STEMS", "Stonky");
+    IupSetLanguageString("IUP_MARKSSTEMS", "Znacky & stonky");
+    IupSetLanguageString("IUP_HORIZONTALBARS", "PodÈlnÈ sloupce");
+    IupSetLanguageString("IUP_MULTIBARS", "VÌcen·sobnÈ sloupce");
+    IupSetLanguageString("IUP_ERRORBARS", "ChybovÈ sloupce");
+    IupSetLanguageString("IUP_STEPS", "Kroky");
+    IupSetLanguageString("IUP_PIE", "Kol·c");
+    IupSetLanguageString("IUP_LINESTYLE", "Styl c·ry:");
+    IupSetLanguageString("IUP_CONTINUOUS", "Souvisl·");
+    IupSetLanguageString("IUP_DASHED", "C·rkovan·");
+    IupSetLanguageString("IUP_DOTTED", "Teckovan·");
+    IupSetLanguageString("IUP_DASH_DOT", "C·rka, tecka");
+    IupSetLanguageString("IUP_DASH_DOT_DOT", "C·rka, tecka, tecka");
+    IupSetLanguageString("IUP_LINEWIDTH", "SÌrka c·ry:");
+    IupSetLanguageString("IUP_MARKSTYLE", "Styl znacky:");
+    IupSetLanguageString("IUP_BAROUTLINE", "Obrys sloupce:");
+    IupSetLanguageString("IUP_BARSPACING", "Vzd·lenost mezi sloupci:");
+    IupSetLanguageString("IUP_BAROUTLINECOLOR", "Barva obrysu sloupce:");
+    IupSetLanguageString("IUP_PLUS", "Plus");
+    IupSetLanguageString("IUP_STAR", "Hvezdicka");
+    IupSetLanguageString("IUP_CIRCLE", "Krouzek");
+    IupSetLanguageString("IUP_X", "X");
+    IupSetLanguageString("IUP_BOX", "Ctverecek");
+    IupSetLanguageString("IUP_DIAMOND", "Diamant");
+    IupSetLanguageString("IUP_HOLLOW_CIRCLE", "Pr·zdn˝ krouzek");
+    IupSetLanguageString("IUP_HOLLOW_BOX", "Pr·zdn˝ ctverecek");
+    IupSetLanguageString("IUP_HOLLOW_DIAMOND", "Pr·zdn˝ diamant");
+    IupSetLanguageString("IUP_MARKSIZE", "Velikost znacky:");
+    IupSetLanguageString("IUP_AREATRANSPARENCY", "Pruhlednost plochy:");
+    IupSetLanguageString("IUP_PIERADIUS", "Polomer kol·ce:");
+    IupSetLanguageString("IUP_PIESTARTANGLE", "Uhel poc·tku kol·ce:");
+    IupSetLanguageString("IUP_PIECONTOUR", "Obrys kol·ce:");
+    IupSetLanguageString("IUP_PIEHOLE", "Otvor v kol·ci:");
+    IupSetLanguageString("IUP_PIESLICELABEL", "Popis dÌlu kol·ce:");
+    IupSetLanguageString("IUP_PIESLICELABELPOS", "Pozice popisku dÌlu kol·ce:");
+    IupSetLanguageString("IUP_PERCENT", "Procenta");
+    IupSetLanguageString("IUP_NONE", "Nic");
+
+    IupSetLanguageString("IUP_CLOSE", "ZavrÌt");
+
+    IupSetLanguageString("IUP_BACKGROUND", "PozadÌ");
+    IupSetLanguageString("IUP_TITLE", "N·zev");
+    IupSetLanguageString("IUP_LEGEND", "Legenda");
+    IupSetLanguageString("IUP_LEGENDBOX", "R·mecek legendy");
+    IupSetLanguageString("IUP_GRID", "MrÌzka");
+    IupSetLanguageString("IUP_GRIDMINOR", "Sekund·rnÌ mrÌzka");
+    IupSetLanguageString("IUP_XAXIS", "Osa X");
+    IupSetLanguageString("IUP_YAXIS", "Osa Y");
+    IupSetLanguageString("IUP_AXISLABEL", "Popis osy");
+    IupSetLanguageString("IUP_AXISTICKS", "DÌlky osy");
+    IupSetLanguageString("IUP_AXISTICKSNUMBER", "CÌsla dÌlku osy");
+
+    IupSetLanguageString("IUP_TEXT", "Text:");
+    IupSetLanguageString("IUP_SHOW", "Zobrazit:");
+    IupSetLanguageString("IUP_HORIZONTAL", "Vodorovne");
+    IupSetLanguageString("IUP_VERTICAL", "Svisle");
+
+    IupSetLanguageString("IUP_CHANGESNOTAPPLIEDAPPLY", "Zmeny nebyly provedeny. ProvÈst?");
+
+    IupSetLanguageString("IUP_MARGIN", "Okraj");
+    IupSetLanguageString("IUP_LEFT", "Lev˝:");
+    IupSetLanguageString("IUP_RIGHT", "Prav˝:");
+    IupSetLanguageString("IUP_TOP", "Nahore:");
+    IupSetLanguageString("IUP_BOTTOM", "Dole:");
+
+    IupSetLanguageString("IUP_FONTSTYLE", "Styl pÌsma:");
+    IupSetLanguageString("IUP_FONTSIZE", "Velikost pÌsma:");
+    IupSetLanguageString("IUP_PLAIN", "ObycejnÈ");
+    IupSetLanguageString("IUP_BOLD", "TucnÈ");
+    IupSetLanguageString("IUP_ITALIC", "KurzÌva");
+    IupSetLanguageString("IUP_BOLDITALIC", "Tucn· kurzÌva");
+
+    IupSetLanguageString("IUP_POSITION", "Poloha:");
+    IupSetLanguageString("IUP_POSXY", "(x,y):");
+    IupSetLanguageString("IUP_TOPRIGHT", "Vpravo nahore");
+    IupSetLanguageString("IUP_TOPLEFT", "Vlevo nahore");
+    IupSetLanguageString("IUP_BOTTOMRIGHT", "Vpravo dole");
+    IupSetLanguageString("IUP_BOTTOMLEFT", "Vlevo dole");
+    IupSetLanguageString("IUP_BOTTOMCENTER", "Dole uprostred");
+    IupSetLanguageString("IUP_XY", "(x,y)");
+
+    IupSetLanguageString("IUP_SHOWARROW", "Zobrazit sipky:");
+    IupSetLanguageString("IUP_MIN", "Min:");
+    IupSetLanguageString("IUP_MAX", "Max:");
+    IupSetLanguageString("IUP_REVERSE", "Obr·cene:");
+    IupSetLanguageString("IUP_CROSSORIGIN", "Poc·tek krÌze:");
+    IupSetLanguageString("IUP_CENTERED", "Centrovane:");
+
+    IupSetLanguageString("IUP_SCALE", "MerÌtko:");
+    IupSetLanguageString("IUP_LINEAR", "Line·rnÌ");
+    IupSetLanguageString("IUP_LOG10", "LogaritmickÈ (z·klad 10)");
+    IupSetLanguageString("IUP_LOG2", "LogaritmickÈ (z·klad 2)");
+    IupSetLanguageString("IUP_LOGN", "LogaritmickÈ (z·klad e)");
+
+    IupSetLanguageString("IUP_SPACING", "Vzd·lenost:");
+    IupSetLanguageString("IUP_MAJORSPAN", "HlavnÌ rozsah:");
+    IupSetLanguageString("IUP_MINORDIVISION", "VedlejsÌ rozsah:");
+    IupSetLanguageString("IUP_SIZE", "Velikost:");
+    IupSetLanguageString("IUP_MAJOR", "HlavnÌ:");
+    IupSetLanguageString("IUP_MINOR", "VedlejsÌ:");
+
+    IupSetLanguageString("IUP_ROTATE", "Otocit:");
+    IupSetLanguageString("IUP_ANGLE", "⁄hel:");
+
+    IupSetLanguageString("IUP_VALUE", "Hodnota:");
+    IupSetLanguageString("IUP_DECIMALS", "Desetiny:");
+    IupSetLanguageString("IUP_FORMAT", "Form·t:");
+
+    if (IupGetInt(NULL, "UTF8MODE"))
+    {
+      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
+      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
+      IupSetLanguageString("IUP_EXPORT", "Exportovat");
+      IupSetLanguageString("IUP_COPY", "Kop√≠rovat");
+      IupSetLanguageString("IUP_PRINTDLG", "Tisk...");
+
+      IupSetLanguageString("IUP_ZOOMINAC", "P≈ôibl√≠≈æit\t+");
+      IupSetLanguageString("IUP_ZOOMOUTAC", "Odd√°lit\t-");
+      IupSetLanguageString("IUP_RESETZOOMAC", "Zobrazen√≠ 1:1\t.");
+      IupSetLanguageString("IUP_SHOWHIDELEGEND", "Zobrazit/skr√Ωt legendu");
+      IupSetLanguageString("IUP_SHOWHIDEGRID", "Zobrazit/skr√Ωt m≈ô√≠≈æku");
+
+      IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Neplatn√Ω vzorec.");
+
+      IupSetLanguageString("IUP_PROPERTIESDLG", "Vlastnosti...");
+      IupSetLanguageString("IUP_DATASETPROPERTIESDLG", "Vlastnosti datov√© sady...");
+      IupSetLanguageString("IUP_DATASETVALUESDLG", "Hodnoty datov√© sady...");
+
+      IupSetLanguageString("IUP_NAME", "N√°zev:");
+      IupSetLanguageString("IUP_COLOR", "Barva:");
+      IupSetLanguageString("IUP_MODE", "M√≥d");
+      IupSetLanguageString("IUP_LINES", "ƒå√°ry");
+      IupSetLanguageString("IUP_MARKS", "Znaƒçky");
+      IupSetLanguageString("IUP_MARKSLINES", "Znaƒçky a ƒç√°ry");
+      IupSetLanguageString("IUP_BARS", "Sloupce");
+      IupSetLanguageString("IUP_AREA", "Plocha");
+      IupSetLanguageString("IUP_STEMS", "Stonky");
+      IupSetLanguageString("IUP_MARKSSTEMS", "Znaƒçky & stonky");
+      IupSetLanguageString("IUP_HORIZONTALBARS", "Pod√©ln√© sloupce");
+      IupSetLanguageString("IUP_MULTIBARS", "V√≠cen√°sobn√© sloupce");
+      IupSetLanguageString("IUP_ERRORBARS", "Chybov√© sloupce");
+      IupSetLanguageString("IUP_STEPS", "Kroky");
+      IupSetLanguageString("IUP_PIE", "Kol√°ƒç");
+      IupSetLanguageString("IUP_LINESTYLE", "Styl ƒç√°ry:");
+      IupSetLanguageString("IUP_CONTINUOUS", "Souvisl√°");
+      IupSetLanguageString("IUP_DASHED", "ƒå√°rkovan√°");
+      IupSetLanguageString("IUP_DOTTED", "Teƒçkovan√°");
+      IupSetLanguageString("IUP_DASH_DOT", "ƒå√°rka, teƒçka");
+      IupSetLanguageString("IUP_DASH_DOT_DOT", "ƒå√°rka, teƒçka, teƒçka");
+      IupSetLanguageString("IUP_LINEWIDTH", "≈†√≠≈ôka ƒç√°ry:");
+      IupSetLanguageString("IUP_MARKSTYLE", "Styl znaƒçky:");
+      IupSetLanguageString("IUP_BAROUTLINE", "Obrys sloupce:");
+      IupSetLanguageString("IUP_BARSPACING", "Vzd√°lenost mezi sloupci:");
+      IupSetLanguageString("IUP_BAROUTLINECOLOR", "Barva obrysu sloupce:");
+      IupSetLanguageString("IUP_PLUS", "Plus");
+      IupSetLanguageString("IUP_STAR", "Hvƒõzdiƒçka");
+      IupSetLanguageString("IUP_CIRCLE", "Krou≈æek");
+      IupSetLanguageString("IUP_X", "X");
+      IupSetLanguageString("IUP_BOX", "ƒåtvereƒçek");
+      IupSetLanguageString("IUP_DIAMOND", "Diamant");
+      IupSetLanguageString("IUP_HOLLOW_CIRCLE", "Pr√°zdn√Ω krou≈æek");
+      IupSetLanguageString("IUP_HOLLOW_BOX", "Pr√°zdn√Ω ƒçtvereƒçek");
+      IupSetLanguageString("IUP_HOLLOW_DIAMOND", "Pr√°zdn√Ω diamant");
+      IupSetLanguageString("IUP_MARKSIZE", "Velikost znaƒçky:");
+      IupSetLanguageString("IUP_AREATRANSPARENCY", "Pr≈Øhlednost plochy:");
+      IupSetLanguageString("IUP_PIERADIUS", "Polomƒõr kol√°ƒçe:");
+      IupSetLanguageString("IUP_PIESTARTANGLE", "√öhel poƒç√°tku kol√°ƒçe:");
+      IupSetLanguageString("IUP_PIECONTOUR", "Obrys kol√°ƒçe:");
+      IupSetLanguageString("IUP_PIEHOLE", "Otvor v kol√°ƒçi:");
+      IupSetLanguageString("IUP_PIESLICELABEL", "Popis d√≠lu kol√°ƒçe:");
+      IupSetLanguageString("IUP_PIESLICELABELPOS", "Pozice popisku d√≠lu kol√°ƒçe:");
+      IupSetLanguageString("IUP_PERCENT", "Procenta");
+      IupSetLanguageString("IUP_NONE", "Nic");
+
+      IupSetLanguageString("IUP_CLOSE", "Zav≈ô√≠t");
+
+      IupSetLanguageString("IUP_BACKGROUND", "Pozad√≠");
+      IupSetLanguageString("IUP_TITLE", "N√°zev");
+      IupSetLanguageString("IUP_LEGEND", "Legenda");
+      IupSetLanguageString("IUP_LEGENDBOX", "R√°meƒçek legendy");
+      IupSetLanguageString("IUP_GRID", "M≈ô√≠≈æka");
+      IupSetLanguageString("IUP_GRIDMINOR", "Sekund√°rn√≠ m≈ô√≠≈æka");
+      IupSetLanguageString("IUP_XAXIS", "Osa X");
+      IupSetLanguageString("IUP_YAXIS", "Osa Y");
+      IupSetLanguageString("IUP_AXISLABEL", "Popis osy");
+      IupSetLanguageString("IUP_AXISTICKS", "D√≠lky osy");
+      IupSetLanguageString("IUP_AXISTICKSNUMBER", "ƒå√≠sla d√≠lk≈Ø osy");
+
+      IupSetLanguageString("IUP_TEXT", "Text:");
+      IupSetLanguageString("IUP_SHOW", "Zobrazit:");
+      IupSetLanguageString("IUP_HORIZONTAL", "Vodorovnƒõ");
+      IupSetLanguageString("IUP_VERTICAL", "Svisle");
+
+      IupSetLanguageString("IUP_CHANGESNOTAPPLIEDAPPLY", "Zmƒõny nebyly provedeny. Prov√©st?");
+
+      IupSetLanguageString("IUP_MARGIN", "Okraj");
+      IupSetLanguageString("IUP_LEFT", "Lev√Ω:");
+      IupSetLanguageString("IUP_RIGHT", "Prav√Ω:");
+      IupSetLanguageString("IUP_TOP", "Naho≈ôe:");
+      IupSetLanguageString("IUP_BOTTOM", "Dole:");
+
+      IupSetLanguageString("IUP_FONTSTYLE", "Styl p√≠sma:");
+      IupSetLanguageString("IUP_FONTSIZE", "Velikost p√≠sma:");
+      IupSetLanguageString("IUP_PLAIN", "Obyƒçejn√©");
+      IupSetLanguageString("IUP_BOLD", "Tuƒçn√©");
+      IupSetLanguageString("IUP_ITALIC", "Kurz√≠va");
+      IupSetLanguageString("IUP_BOLDITALIC", "Tuƒçn√° kurz√≠va");
+
+      IupSetLanguageString("IUP_POSITION", "Poloha:");
+      IupSetLanguageString("IUP_POSXY", "(x,y):");
+      IupSetLanguageString("IUP_TOPRIGHT", "Vpravo naho≈ôe");
+      IupSetLanguageString("IUP_TOPLEFT", "Vlevo naho≈ôe");
+      IupSetLanguageString("IUP_BOTTOMRIGHT", "Vpravo dole");
+      IupSetLanguageString("IUP_BOTTOMLEFT", "Vlevo dole");
+      IupSetLanguageString("IUP_BOTTOMCENTER", "Dole uprost≈ôed");
+      IupSetLanguageString("IUP_XY", "(x,y)");
+
+      IupSetLanguageString("IUP_SHOWARROW", "Zobrazit ≈°ipky:");
+      IupSetLanguageString("IUP_MIN", "Min:");
+      IupSetLanguageString("IUP_MAX", "Max:");
+      IupSetLanguageString("IUP_REVERSE", "Obr√°cenƒõ:");
+      IupSetLanguageString("IUP_CROSSORIGIN", "Poƒç√°tek k≈ô√≠≈æe:");
+      IupSetLanguageString("IUP_CENTERED", "Centrovanƒõ:");
+
+      IupSetLanguageString("IUP_SCALE", "Mƒõ≈ô√≠tko:");
+      IupSetLanguageString("IUP_LINEAR", "Line√°rn√≠");
+      IupSetLanguageString("IUP_LOG10", "Logaritmick√© (z√°klad 10)");
+      IupSetLanguageString("IUP_LOG2", "Logaritmick√© (z√°klad 2)");
+      IupSetLanguageString("IUP_LOGN", "Logaritmick√© (z√°klad e)");
+
+      IupSetLanguageString("IUP_SPACING", "Vzd√°lenost:");
+      IupSetLanguageString("IUP_MAJORSPAN", "Hlavn√≠ rozsah:");
+      IupSetLanguageString("IUP_MINORDIVISION", "Vedlej≈°√≠ rozdƒõlen√≠:");
+      IupSetLanguageString("IUP_SIZE", "Velikost:");
+      IupSetLanguageString("IUP_MAJOR", "Hlavn√≠:");
+      IupSetLanguageString("IUP_MINOR", "Vedlej≈°√≠:");
+
+      IupSetLanguageString("IUP_ROTATE", "Otoƒçit:");
+      IupSetLanguageString("IUP_ANGLE", "√öhel:");
+
+      IupSetLanguageString("IUP_VALUE", "Hodnota:");
+      IupSetLanguageString("IUP_DECIMALS", "Desetiny:");
+      IupSetLanguageString("IUP_FORMAT", "Form√°t:");
+    }
+  }
 }
 
 static Iclass* iPlotNewClass(void)

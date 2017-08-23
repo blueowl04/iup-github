@@ -905,7 +905,8 @@ static int iMatrixExKeyPress_CB(Ihandle* ih, int c, int press)
       }
       break;
     case K_cA:
-      if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "ENGLISH"))
+      if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "ENGLISH") ||
+          iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
       {
         iMatrixExSelectAll(ih);
         return IUP_IGNORE;
@@ -940,7 +941,8 @@ static int iMatrixExKeyPress_CB(Ihandle* ih, int c, int press)
       }
       break;
     case K_cY:
-      if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "ENGLISH"))
+      if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "ENGLISH") ||
+          iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
       {
         IupSetAttribute(ih, "REDO", NULL);  /* 1 level */
         return IUP_IGNORE;
@@ -998,7 +1000,8 @@ static int iMatrixExKeyPress_CB(Ihandle* ih, int c, int press)
       }
       break;
     case K_cF: 
-      if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "ENGLISH"))
+      if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "ENGLISH") ||
+          iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
       {
         ImatExData* matex_data = (ImatExData*)iupAttribGet(ih, "_IUP_MATEX_DATA");
         iupMatrixExFindShowDialog(matex_data);
@@ -1270,6 +1273,107 @@ static void iMatrixExSetClassUpdate(Iclass* ic)
       IupSetLanguageString("IUP_DECIMALSYMBOL", "S√≠mbolo Decimal:");
       IupSetLanguageString("IUP_HERETOTOP", "De aqu√≠ para arriba");
       IupSetLanguageString("IUP_HERETOBOTTOM", "De aqu√≠ para abajo");
+    }
+  }
+  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
+  {
+    IupSetLanguageString("IUP_EXPORT", "Exportovat");
+    IupSetLanguageString("IUP_IMPORT", "Importovat");
+    IupSetLanguageString("IUP_SETTINGSDLG", "NastavenÌ...");
+    IupSetLanguageString("IUP_TEXTSEPARATOR", "Oddelovac cÌsel:");
+    IupSetLanguageString("IUP_OTHERTEXTSEPARATOR", "DalsÌ oddelovac cÌsel:");
+    IupSetLanguageString("IUP_DECIMALSYMBOL", "Desetinn˝ symbol:");
+    IupSetLanguageString("IUP_UNDOAC", "Zpet\tCtrl+Z");
+    IupSetLanguageString("IUP_REDOAC", "Znovu\tCtrl+Y");
+    IupSetLanguageString("IUP_UNDOLISTDLG", "Historie zmen...\tCtrl+U");
+    IupSetLanguageString("IUP_UNDOLIST", "Historie zmen");
+    IupSetLanguageString("IUP_CURRENTSTATE", "Aktu·lnÌ stav");
+    IupSetLanguageString("IUP_CUTAC", "Vyjmout\tCtrl+X");
+    IupSetLanguageString("IUP_COPYAC", "KopÌrovat\tCtrl+C");
+    IupSetLanguageString("IUP_PASTEAC", "Vlozit\tCtrl+V");
+    IupSetLanguageString("IUP_ERASEAC", "Vymazat\tDel");
+    IupSetLanguageString("IUP_SELECTALLAC", "Vybrat vse\tCtrl+A");
+    IupSetLanguageString("IUP_FINDDLG", "NajÌt...\tCtrl+F");
+    IupSetLanguageString("IUP_GOTODLG", "JÌt na...\tCtrl+G");
+    IupSetLanguageString("IUP_SORTDLG", "Seradit...");
+    IupSetLanguageString("IUP_FREEZE", "Ukotvit bunky");
+    IupSetLanguageString("IUP_UNFREEZE", "Uvolnit bunky");
+    IupSetLanguageString("IUP_COPYTOSAMECOLUMN", "KopÌrovat do (stejn˝ sloupec)");
+    IupSetLanguageString("IUP_ALLLINES", "Vsech r·dku");
+    IupSetLanguageString("IUP_HERETOTOP", "Odtud nahoru");
+    IupSetLanguageString("IUP_HERETOBOTTOM", "Odtud dolu");
+    IupSetLanguageString("IUP_INTERVALDLG", "Rozsah...");
+    IupSetLanguageString("IUP_SELECTEDLINES", "Vybrat r·dky");
+
+    IupSetLanguageString("IUP_VISIBILITY", "Viditelnost");
+    IupSetLanguageString("IUP_HIDECOLUMN", "Skr˝t sloupec");
+    IupSetLanguageString("IUP_SHOWHIDDENCOLUMNS", "Zobrazit skrytÈ sloupce");
+    IupSetLanguageString("IUP_HIDELINE", "Skr˝t r·dek");
+    IupSetLanguageString("IUP_SHOWHIDDENLINES", "Zobrazit skrytÈ r·dky");
+
+    IupSetLanguageString("IUP_COPYTOINTERVAL", "KopÌrovat do - rozsah");
+    IupSetLanguageString("IUP_GOTO", "JÌt na");
+    IupSetLanguageString("IUP_LINE", "R·dek:");
+    IupSetLanguageString("IUP_COLUMN", "Sloupec:");
+    IupSetLanguageString("IUP_LINESTART", "Poc·tecnÌ r·dek:");
+    IupSetLanguageString("IUP_LINEEND", "Koncov˝ r·dek:");
+
+    IupSetLanguageString("IUP_UNITS", "Jednotky:");
+    IupSetLanguageString("IUP_DECIMALS", "Desetinn· mÌsta:");
+    IupSetLanguageString("IUP_COLUMNDECIMALS", "Desetinn· mÌsta sloupce");
+    IupSetLanguageString("IUP_COLUMNDECIMALSDLG", "Desetinn· mÌsta sloupce...");
+    IupSetLanguageString("IUP_COLUMNUNITS", "Jednotky sloupce");
+    IupSetLanguageString("IUP_COLUMNUNITSDLG", "Jednotky sloupce...");
+
+    IupSetLanguageString("IUP_ERRORINVALIDSELECTION", "Neplatn˝ v˝ber.");
+    IupSetLanguageString("IUP_ERRORNOTEXT", "Pr·zdn˝ text.");
+    IupSetLanguageString("IUP_ERRORINVALIDDATA", "Neplatn· data.");
+    IupSetLanguageString("IUP_ERRORNOSELECTION", "Prazdn˝ v˝ber.");
+    IupSetLanguageString("IUP_ERRORINVALIDINTERVAL", "Neplatn˝ rozsah.");
+
+    if (IupGetInt(NULL, "UTF8MODE"))
+    {
+      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
+      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
+      IupSetLanguageString("IUP_SETTINGSDLG", "Nastaven√≠...");
+      IupSetLanguageString("IUP_TEXTSEPARATOR", "Oddƒõlovaƒç ƒç√≠sel:");
+      IupSetLanguageString("IUP_OTHERTEXTSEPARATOR", "Dal≈°√≠ oddƒõlovaƒç ƒç√≠sel:");
+      IupSetLanguageString("IUP_DECIMALSYMBOL", "Desetinn√Ω symbol:");
+      IupSetLanguageString("IUP_UNDOAC", "Zpƒõt\tCtrl+Z");
+      IupSetLanguageString("IUP_UNDOLISTDLG", "Historie zmƒõn...\tCtrl+U");
+      IupSetLanguageString("IUP_UNDOLIST", "Historie zmƒõn");
+      IupSetLanguageString("IUP_CURRENTSTATE", "Aktu√°ln√≠ stav");
+      IupSetLanguageString("IUP_COPYAC", "Kop√≠rovat\tCtrl+C");
+      IupSetLanguageString("IUP_PASTEAC", "Vlo≈æit\tCtrl+V");
+      IupSetLanguageString("IUP_SELECTALLAC", "Vybrat v≈°e\tCtrl+A");
+      IupSetLanguageString("IUP_FINDDLG", "Naj√≠t...\tCtrl+F");
+      IupSetLanguageString("IUP_GOTODLG", "J√≠t na...\tCtrl+G");
+      IupSetLanguageString("IUP_SORTDLG", "Se≈ôadit...");
+      IupSetLanguageString("IUP_COPYTOSAMECOLUMN", "Kop√≠rovat do (stejn√Ω sloupec)");
+      IupSetLanguageString("IUP_ALLLINES", "V≈°ech ≈ô√°dku");
+      IupSetLanguageString("IUP_HERETOBOTTOM", "Odtud dol≈Ø");
+      IupSetLanguageString("IUP_SELECTEDLINES", "Vybrat ≈ô√°dky");
+
+      IupSetLanguageString("IUP_HIDECOLUMN", "Skr√Ωt sloupec");
+      IupSetLanguageString("IUP_SHOWHIDDENCOLUMNS", "Zobrazit skryt√© sloupce");
+      IupSetLanguageString("IUP_HIDELINE", "Skr√Ωt ≈ô√°dek");
+      IupSetLanguageString("IUP_SHOWHIDDENLINES", "Zobrazit skryt√© ≈ô√°dky");
+
+      IupSetLanguageString("IUP_COPYTOINTERVAL", "Kop√≠rovat do - rozsah");
+      IupSetLanguageString("IUP_GOTO", "J√≠t na");
+      IupSetLanguageString("IUP_LINE", "≈ò√°dek:");
+      IupSetLanguageString("IUP_LINESTART", "Poƒç√°teƒçn√≠ ≈ô√°dek:");
+      IupSetLanguageString("IUP_LINEEND", "Koncov√Ω ≈ô√°dek:");
+
+      IupSetLanguageString("IUP_DECIMALS", "Desetinn√° m√≠sta:");
+      IupSetLanguageString("IUP_COLUMNDECIMALS", "Desetinn√° m√≠sta sloupce");
+      IupSetLanguageString("IUP_COLUMNDECIMALSDLG", "Desetinn√° m√≠sta sloupce...");
+
+      IupSetLanguageString("IUP_ERRORINVALIDSELECTION", "Neplatn√Ω v√Ωbƒõr.");
+      IupSetLanguageString("IUP_ERRORNOTEXT", "Pr√°zdn√Ω text.");
+      IupSetLanguageString("IUP_ERRORINVALIDDATA", "Neplatn√° data.");
+      IupSetLanguageString("IUP_ERRORNOSELECTION", "Pr√°zdn√Ω v√Ωbƒõr.");
+      IupSetLanguageString("IUP_ERRORINVALIDINTERVAL", "Neplatn√Ω rozsah.");
     }
   }
 
