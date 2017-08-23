@@ -2145,6 +2145,17 @@ static void iMatrixSetClassUpdate(Iclass* ic)
       IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Fórmula Inválida.");
     }
   }
+  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
+  {
+    IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Neplatn� vzorec.");
+
+    if (IupGetInt(NULL, "UTF8MODE"))
+    {
+      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
+      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
+      IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Neplatný vzorec.");
+    }
+  }
 }
 
 Iclass* iupMatrixNewClass(void)

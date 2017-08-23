@@ -95,8 +95,8 @@ char *IupGetLanguage(void)
 /**********************************************************************************/
 
 
-#define ISRTMSG_NUM_LNG 6    /* 5+1 for expansion */
-                             /* ENGLISH, PORTUGUESE, PORTUGUESE(UTF-8), SPANISH, SPANISH(UTF-8), NULL */
+#define ISRTMSG_NUM_LNG 8    /* 7+1 for expansion */
+                             /* ENGLISH, PORTUGUESE, PORTUGUESE(UTF-8), SPANISH, SPANISH(UTF-8), CZECH, CZECH(UTF-8), NULL */
 
 typedef struct _IstdMessage
 {
@@ -110,47 +110,47 @@ typedef struct _IstdMessage
 
 static IstdMessage iStdMessages[] =
 {
-  {"IUP_ERROR", {"Error!", "Erro!", NULL, "Error!", NULL, NULL}},
-  {"IUP_ATTENTION", {"Attention!", "AtenÁ„o!", "Aten√ß√£o!", "°Advertencia!", "¬°Advertencia!", NULL}},
-  {"IUP_YES", {"Yes", "Sim", NULL, "Si", NULL, NULL}},
-  {"IUP_NO", {"No", "N„o", "N√£o", "No", NULL, NULL}},
-  {"IUP_INVALIDDIR", {"Invalid directory.", "DiretÛrio inv·lido.", "Diret√≥rio inv√°lido.", "Directorio inv·lido.", "Directorio inv√°lido.", NULL}},
-  {"IUP_FILEISDIR", {"The selected name is a directory.", "O nome selecionado È um diretÛrio.", "O nome selecionado √© um diret√≥rio.", "El nombre seleccionado es un directorio.", NULL, NULL}},
-  {"IUP_FILENOTEXIST", {"File does not exist.", "Arquivo inexistente.", NULL, "Archivo inexistente.", NULL, NULL}},
-  {"IUP_FILEOVERWRITE", {"Overwrite existing file?", "Sobrescrever arquivo?", NULL, "øSobrescribir archivo?", "¬øSobrescribir archivo?", NULL}},
-  {"IUP_CREATEFOLDER", {"Create Folder", "Criar DiretÛrio", "Criar Diret√≥rio", "Crear Directorio", NULL, NULL}},
-  {"IUP_NAMENEWFOLDER", {"Name of the new folder:", "Nome do novo diretÛrio:", "Nome do novo diret√≥rio:", "Nombre del nuevo directorio:", NULL, NULL}},
-  {"IUP_SAVEAS", {"Save As", "Salvar Como", NULL, "Guardar Como", NULL, NULL}},
-  {"IUP_OPEN", {"Open", "Abrir", NULL, "Abrir", NULL, NULL}},
-  {"IUP_SELECTDIR", {"Select Directory", "Selecionar DiretÛrio", "Selecionar Diret√≥rio", "Seleccionar Directorio", NULL, NULL}},
-  {"IUP_OK", {"OK", "OK", NULL, "Aceptar", NULL, NULL}},
-  {"IUP_CANCEL", {"Cancel", "Cancelar", NULL, "Cancelar", NULL, NULL}},
-  {"IUP_RETRY", {"Retry", "Tentar Novamente", NULL, "Reintentar", NULL, NULL}},
-  {"IUP_APPLY", {"Apply", "Aplicar", NULL, "Aplicar", NULL, NULL}},
-  {"IUP_RESET", {"Reset", "Reinicializar", NULL, "Reiniciar", NULL, NULL}},
-  {"IUP_GETCOLOR", {"Color Selection", "SeleÁ„o de Cor", "Sele√ß√£o de Cor", "SelecciÛn de Color", "Selecci√≥n de Color", NULL}},
-  {"IUP_HELP", {"Help", "Ajuda", NULL, "Ayuda", NULL, NULL}},
-  {"IUP_RED", {"&Red:", "&Vermelho:", NULL, "&Rojo:", NULL, NULL}},
-  {"IUP_GREEN", {"&Green:", "V&erde:", NULL, "&Verde:", NULL, NULL}},
-  {"IUP_BLUE", {"&Blue:", "&Azul:", NULL, "&Azul:", NULL, NULL}},
-  {"IUP_HUE", {"&Hue:", "&Matiz:", NULL, "&Matiz:", NULL, NULL}},
-  {"IUP_SATURATION", {"&Saturation:", "&SaturaÁ„o:", "&Satura√ß√£o:", "&SaturaciÛn:", "&Saturaci√≥n:", NULL}},
-  {"IUP_INTENSITY", {"&Intensity:", NULL, "&Intensidade:", "&Intensidad:", NULL, NULL}},
-  {"IUP_OPACITY", {"&Opacity:", "&Opacidade:", NULL, "&Opacidad:", NULL, NULL}},
-  {"IUP_PALETTE", {"&Palette:", "&Paleta:", NULL, "&Paleta:", NULL, NULL}},
-  {"IUP_TRUE", {"True", "Verdadeiro", NULL, "Verdadero", NULL, NULL}},
-  {"IUP_FALSE", {"False", "Falso", NULL, "Falso", NULL, NULL}},
-  {"IUP_FAMILY", {"Family:", "FamÌlia:", "Fam√≠lia:", "Familia:", NULL, NULL}},
-  {"IUP_STYLE", {"Style:", "Estilo:", NULL, "Estilo:", NULL, NULL}},
-  {"IUP_SIZE", {"Size:", "Tamanho:", NULL, "TamaÒo:", "Tama√±o:", NULL}},
-  {"IUP_SAMPLE", {"Sample:", "Exemplo:", NULL, "Ejemplo:", NULL, NULL}},
-  {"IUP_ERRORFILEOPEN", { "Failed to open file.", "Falha ao abrir o arquivo.", NULL, "Error al abrir el archivo.", NULL, NULL } },
-  {"IUP_ERRORFILESAVE", { "Failed to save file.", "Falha ao salvar o arquivo.", NULL, "Error al guardar el archivo.", NULL, NULL } },
-  { "IUP_LUAERROR", { "Lua Error", "Erro de Lua", NULL, "Error de Lua", NULL, NULL } },
-  { "IUP_CONTINUE", { "Continue", "Continuar", NULL, "Contin˙e", "Contin√∫e", NULL } },
-  { "IUP_COPYTOCLIPBOARD", { "Copy text to clipboard.", "Copiar texto para a ·rea de transferÍncia.", "Copiar texto para a √°rea de transfer√™ncia.", "Copiar texto para un ·rea de transferencia.", "Copiar texto para un √°rea de transferencia.", NULL } },
-  { "IUP_COPY", { "Copy", "Copiar", NULL, "Copiar", NULL, NULL } },
-  { "IUP_EXIT", { "Exit", "Sair", NULL, "Salir", NULL, NULL } },
+  {"IUP_ERROR", {"Error!", "Erro!", NULL, "Error!", NULL, "Chyba!", "Chyba!", NULL}},
+  {"IUP_ATTENTION", {"Attention!", "AtenÁ„o!", "Aten√ß√£o!", "°Advertencia!", "¬°Advertencia!", "UpozornenÌ!", "Upozornƒõn√≠!", NULL}},
+  {"IUP_YES", {"Yes", "Sim", NULL, "Si", NULL, "Ano", "Ano", NULL}},
+  {"IUP_NO", {"No", "N„o", "N√£o", "No", NULL, "Ne", "Ne", NULL}},
+  {"IUP_INVALIDDIR", {"Invalid directory.", "DiretÛrio inv·lido.", "Diret√≥rio inv√°lido.", "Directorio inv·lido.", "Directorio inv√°lido.", "Neplatn˝ adres·r.", "Neplatn√Ω adres√°≈ô.", NULL}},
+  {"IUP_FILEISDIR", {"The selected name is a directory.", "O nome selecionado È um diretÛrio.", "O nome selecionado √© um diret√≥rio.", "El nombre seleccionado es un directorio.", NULL, "Vybran˝ soubor je adres·rem.", "Vybran√Ω soubor je adres√°≈ôem.", NULL}},
+  {"IUP_FILENOTEXIST", {"File does not exist.", "Arquivo inexistente.", NULL, "Archivo inexistente.", NULL, "Soubor neexistuje.", "Soubor neexistuje.", NULL}},
+  {"IUP_FILEOVERWRITE", {"Overwrite existing file?", "Sobrescrever arquivo?", NULL, "øSobrescribir archivo?", "¬øSobrescribir archivo?", "Prepsat existujÌcÌ soubor?", "P≈ôepsat existuj√≠c√≠ soubor?", NULL}},
+  {"IUP_CREATEFOLDER", {"Create Folder", "Criar DiretÛrio", "Criar Diret√≥rio", "Crear Directorio", NULL, "Vytvorit slozku", "Vytvo≈ôit slo≈æku.", NULL}},
+  {"IUP_NAMENEWFOLDER", {"Name of the new folder:", "Nome do novo diretÛrio:", "Nome do novo diret√≥rio:", "Nombre del nuevo directorio:", NULL, "N·zev novÈ slozky:", "N√°zev nov√© slo≈æky:", NULL}},
+  {"IUP_SAVEAS", {"Save As", "Salvar Como", NULL, "Guardar Como", NULL, "Ulozit jako", "Ulo≈æit jako", NULL}},
+  {"IUP_OPEN", {"Open", "Abrir", NULL, "Abrir", NULL, "OtevrÌt", "Otev≈ô√≠t", NULL}},
+  {"IUP_SELECTDIR", {"Select Directory", "Selecionar DiretÛrio", "Selecionar Diret√≥rio", "Seleccionar Directorio", NULL, "Vybrat adres·r", "Vybrat adres√°≈ô", NULL}},
+  {"IUP_OK", {"OK", "OK", NULL, "Aceptar", NULL, "OK", "OK", NULL}},
+  {"IUP_CANCEL", {"Cancel", "Cancelar", NULL, "Cancelar", NULL, "Storno", "Storno", NULL}},
+  {"IUP_RETRY", {"Retry", "Tentar Novamente", NULL, "Reintentar", NULL, "Opakovat", "Opakovat", NULL}},
+  {"IUP_APPLY", {"Apply", "Aplicar", NULL, "Aplicar", NULL, "PouzÌt", "Pou≈æ√≠t", NULL}},
+  {"IUP_RESET", {"Reset", "Reinicializar", NULL, "Reiniciar", NULL, "Resetovat", "Resetovat", NULL}},
+  {"IUP_GETCOLOR", {"Color Selection", "SeleÁ„o de Cor", "Sele√ß√£o de Cor", "SelecciÛn de Color", "Selecci√≥n de Color", "V˝ber barvy", "V√Ωbƒõr barvy", NULL}},
+  {"IUP_HELP", {"Help", "Ajuda", NULL, "Ayuda", NULL, "N·poveda", "N√°povƒõda", NULL}},
+  {"IUP_RED", {"&Red:", "&Vermelho:", NULL, "&Rojo:", NULL, "&Cerven·:", "ƒåe&rven√°:", NULL}},
+  {"IUP_GREEN", {"&Green:", "V&erde:", NULL, "&Verde:", NULL, "&Zelen·:", "&Zelen√°:", NULL}},
+  {"IUP_BLUE", {"&Blue:", "&Azul:", NULL, "&Azul:", NULL, "&Modr·:", "&Modr√°:", NULL}},
+  {"IUP_HUE", {"&Hue:", "&Matiz:", NULL, "&Matiz:", NULL, "&OdstÌn:", "&Odst√≠n:", NULL}},
+  {"IUP_SATURATION", {"&Saturation:", "&SaturaÁ„o:", "&Satura√ß√£o:", "&SaturaciÛn:", "&Saturaci√≥n:", "&Sytost:", "&Sytost:", NULL}},
+  {"IUP_INTENSITY", {"&Intensity:", NULL, "&Intensidade:", "&Intensidad:", NULL, "&Intenzita:", "&Intenzita:", NULL}},
+  {"IUP_OPACITY", {"&Opacity:", "&Opacidade:", NULL, "&Opacidad:", NULL, "&KrytÌ:", "&Kryt√≠:", NULL}},
+  {"IUP_PALETTE", {"&Palette:", "&Paleta:", NULL, "&Paleta:", NULL, "&Paleta:", "&Paleta:", NULL}},
+  {"IUP_TRUE", {"True", "Verdadeiro", NULL, "Verdadero", NULL, "Pravda", "Pravda", NULL}},
+  {"IUP_FALSE", {"False", "Falso", NULL, "Falso", NULL, "Nepravda", "Nepravda", NULL}},
+  {"IUP_FAMILY", {"Family:", "FamÌlia:", "Fam√≠lia:", "Familia:", NULL, "Rodina:", "Rodina:", NULL}},
+  {"IUP_STYLE", {"Style:", "Estilo:", NULL, "Estilo:", NULL, "Styl:", "Styl:", NULL}},
+  {"IUP_SIZE", {"Size:", "Tamanho:", NULL, "TamaÒo:", "Tama√±o:", "Velikost:", "Velikost:", NULL}},
+  {"IUP_SAMPLE", {"Sample:", "Exemplo:", NULL, "Ejemplo:", NULL, "Vzorek:", "Vzorek:", NULL}},
+  {"IUP_ERRORFILEOPEN", { "Failed to open file.", "Falha ao abrir o arquivo.", NULL, "Error al abrir el archivo.", NULL, "Nepodarilo se otevrÌt soubor.", "Nepoda≈ôilo se otev≈ô√≠t soubor.", NULL } },
+  {"IUP_ERRORFILESAVE", { "Failed to save file.", "Falha ao salvar o arquivo.", NULL, "Error al guardar el archivo.", NULL, "Nepodarilo se ulozit soubor.", "Nepoda≈ôilo se ulo≈æit soubor.", NULL } },
+  { "IUP_LUAERROR", { "Lua Error", "Erro de Lua", NULL, "Error de Lua", NULL, "Chyba Luy", "Chyba Luy", NULL } },
+  { "IUP_CONTINUE", { "Continue", "Continuar", NULL, "Contin˙e", "Contin√∫e", "Pokracovat", "Pokraƒçovat", NULL } },
+  { "IUP_COPYTOCLIPBOARD", { "Copy text to clipboard.", "Copiar texto para a ·rea de transferÍncia.", "Copiar texto para a √°rea de transfer√™ncia.", "Copiar texto para un ·rea de transferencia.", "Copiar texto para un √°rea de transferencia.", "KopÌrovat text do schr·nky.", "Kop√≠rovat text do schr√°nky.", NULL } },
+  { "IUP_COPY", { "Copy", "Copiar", NULL, "Copiar", NULL, "KopÌrovat", "Kop√≠rovat", NULL } },
+  { "IUP_EXIT", { "Exit", "Sair", NULL, "Salir", NULL, "Ukoncit", "Ukonƒçit", NULL } },
   { NULL, { NULL, NULL, NULL, NULL, NULL, NULL } }
 };
 
@@ -186,6 +186,13 @@ void iupStrMessageUpdateLanguage(const char* language)
       lng = 4; /* SPANISH(UTF - 8) */
     else
       lng = 3; /* SPANISH */
+  }
+  else if (iupStrEqualNoCase(language, "CZECH"))
+  {
+    if (utf8mode)
+      lng = 6; /* CZECH(UTF-8) */
+    else
+      lng = 5; /* CZECH */
   }
 
   iStrMessageRegisterInternal(lng, utf8mode);

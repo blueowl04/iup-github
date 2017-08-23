@@ -429,6 +429,40 @@ void iupMatrixExSetClassUpdateFind(Iclass* ic)
       IupSetLanguageString("IUP_MATCH_CASE", "Distinguir may√∫sculas y min√∫sculas");
     }
   }
+  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
+  {
+    IupSetLanguageString("IUP_FIND", "NajÌt");
+    IupSetLanguageString("IUP_FIND_WHAT", "NajÌt co:");
+    IupSetLanguageString("IUP_FIND_NEXT", "NajÌt &n·sledujÌcÌ");
+    IupSetLanguageString("IUP_FIND_PREVIOUS", "NajÌt &predch·zejÌcÌ");
+    IupSetLanguageString("IUP_NOT_FOUND", "Nenalezeno.");
+    IupSetLanguageString("IUP_FOUND_AT", "Nalezeno na");
+
+    IupSetLanguageString("IUP_CLOSE", "ZavrÌt");
+    IupSetLanguageString("IUP_SEARCH", "Hledat");
+
+    IupSetLanguageString("IUP_MATCH_CASE", "Rozlisovat velikost pÌsmen");
+    IupSetLanguageString("IUP_MATCH_WHOLE_CELL", "Porovnat celou bunku");
+    IupSetLanguageString("IUP_BY_ROW", "po r·dcÌch");
+    IupSetLanguageString("IUP_BY_COL", "po sloupcÌch");
+
+    if (IupGetInt(NULL, "UTF8MODE"))
+    {
+      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
+      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
+      IupSetLanguageString("IUP_FIND", "Naj√≠t");
+      IupSetLanguageString("IUP_FIND_WHAT", "Naj√≠t co:");
+      IupSetLanguageString("IUP_FIND_NEXT", "Naj√≠t &n√°sleduj√≠c√≠");
+      IupSetLanguageString("IUP_FIND_PREVIOUS", "Naj√≠t &p≈ôedch√°zej√≠c√≠");
+
+      IupSetLanguageString("IUP_CLOSE", "Zav≈ô√≠t");
+
+      IupSetLanguageString("IUP_MATCH_CASE", "Rozli≈°ovat velikost p√≠smen");
+      IupSetLanguageString("IUP_MATCH_WHOLE_CELL", "Porovnat celou bu≈àku");
+      IupSetLanguageString("IUP_BY_ROW", "po ≈ô√°dc√≠ch");
+      IupSetLanguageString("IUP_BY_COL", "po sloupc√≠ch");
+    }
+  }
 }
 
 void iupMatrixExRegisterFind(Iclass* ic)

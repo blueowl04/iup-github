@@ -425,6 +425,43 @@ void iupMatrixExSetClassUpdateSort(Iclass* ic)
       IupSetLanguageString("IUP_LASTLINE", "Última Linea");
     }
   }
+  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
+  {
+    IupSetLanguageString("IUP_SORTBYCOLUMN", "Radit podle sloupcu");
+    IupSetLanguageString("IUP_INVERT", "Invertovat");
+    IupSetLanguageString("IUP_SORT", "Seradit");
+
+    IupSetLanguageString("IUP_INVERT_TIP", "Invertuje pouze aktu�ln� razen�. Nov� parametry jsou ignorov�ny.");
+
+    IupSetLanguageString("IUP_ORDER", "Porad�");
+    IupSetLanguageString("IUP_ASCENDING", "Vzestupne");
+    IupSetLanguageString("IUP_DESCENDING", "Sestupne");
+
+    IupSetLanguageString("IUP_ALLLINES", "Vsechny r�dky");
+    IupSetLanguageString("IUP_CASESENSITIVE", "Rozlisovat velikost p�smen");
+    IupSetLanguageString("IUP_COLUMN", "Sloupec");
+    IupSetLanguageString("IUP_FIRSTLINE", "Prvn� r�dek");
+    IupSetLanguageString("IUP_LASTLINE", "Posledn� r�dek");
+
+    if (IupGetInt(NULL, "UTF8MODE"))
+    {
+      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
+      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
+      IupSetLanguageString("IUP_SORTBYCOLUMN", "Řadit podle sloupců");
+      IupSetLanguageString("IUP_SORT", "Seřadit");
+
+      IupSetLanguageString("IUP_INVERT_TIP", "Invertuje pouze aktuální řazení. Nové parametry jsou ignorovány.");
+
+      IupSetLanguageString("IUP_ORDER", "Pořadí");
+      IupSetLanguageString("IUP_ASCENDING", "Vzestupně");
+      IupSetLanguageString("IUP_DESCENDING", "Sestupně");
+
+      IupSetLanguageString("IUP_ALLLINES", "Všechny řádky");
+      IupSetLanguageString("IUP_CASESENSITIVE", "Rozlišovat velikost písmen");
+      IupSetLanguageString("IUP_FIRSTLINE", "První řádek");
+      IupSetLanguageString("IUP_LASTLINE", "Poslední řádek");
+    }
+  }
 }
 
 void iupMatrixExRegisterSort(Iclass* ic)

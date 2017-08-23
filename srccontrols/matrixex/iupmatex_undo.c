@@ -464,6 +464,37 @@ void iupMatrixExSetClassUpdateUndo(Iclass* ic)
     IupSetLanguageString("IUP_EDITCELL", "Editar Celda");
     IupSetLanguageString("IUP_CLEARVALUE", "Limpiar Valores");
   }
+  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
+  {
+    IupSetLanguageString("IUP_PASTECLIP", "Vlozit ze schr�nky");
+    IupSetLanguageString("IUP_PASTEDATA", "Vlozit z bufferu");
+    IupSetLanguageString("IUP_PASTEFILE", "Vlozit ze souboru (import)");
+    IupSetLanguageString("IUP_COPYCOLTO_ALL", "Kop�rovat do vsech r�dku");
+    IupSetLanguageString("IUP_COPYCOLTO_TOP", "Kop�rovat nahoru");
+    IupSetLanguageString("IUP_COPYCOLTO_BOTTOM", "Kop�rovat dolu");
+    IupSetLanguageString("IUP_COPYCOLTO_MARKED", "Kop�rovat do oznacen�ho");
+    IupSetLanguageString("IUP_COPYCOLTO_INTERVAL", "Kop�rovat do rozsahu");
+    IupSetLanguageString("IUP_UNDONAME", "Zpet");  /* To avoid conflict with the menu item string */
+    IupSetLanguageString("IUP_REDONAME", "Znovu");
+    IupSetLanguageString("IUP_SETCELL", "Nastavit bunku");
+    IupSetLanguageString("IUP_EDITCELL", "Upravit bunku");
+    IupSetLanguageString("IUP_CLEARVALUE", "Smazat hodnotu");
+
+    if (IupGetInt(NULL, "UTF8MODE"))
+    {
+      IupSetLanguageString("IUP_PASTECLIP", "Vložit ze schránky");
+      IupSetLanguageString("IUP_PASTEDATA", "Vložit z bufferu");
+      IupSetLanguageString("IUP_PASTEFILE", "Vložit ze souboru (import)");
+      IupSetLanguageString("IUP_COPYCOLTO_ALL", "Kopírovat do všech řádků");
+      IupSetLanguageString("IUP_COPYCOLTO_TOP", "Kopírovat nahoru");
+      IupSetLanguageString("IUP_COPYCOLTO_BOTTOM", "Kopírovat dolů");
+      IupSetLanguageString("IUP_COPYCOLTO_MARKED", "Kopírovat do označeného");
+      IupSetLanguageString("IUP_COPYCOLTO_INTERVAL", "Kopírovat do rozsahu");
+      IupSetLanguageString("IUP_UNDONAME", "Zpět");  /* To avoid conflict with the menu item string */
+      IupSetLanguageString("IUP_SETCELL", "Nastavit buňku");
+      IupSetLanguageString("IUP_EDITCELL", "Upravit buňku");
+    }
+  }
 }
 
 void iupMatrixExRegisterUndo(Iclass* ic)
