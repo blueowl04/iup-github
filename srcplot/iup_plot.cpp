@@ -1156,7 +1156,7 @@ static int iPlotDataSetProperties_CB(Ihandle* ih_item)
     "_@IUP_MODE%l|_@IUP_LINES|_@IUP_MARKS|_@IUP_MARKSLINES|_@IUP_AREA|_@IUP_BARS|_@IUP_STEMS|_@IUP_MARKSSTEMS|_@IUP_HORIZONTALBARS|_@IUP_MULTIBARS|_@IUP_STEPS|_@IUP_ERRORBARS|_@IUP_PIE|\n"
     "_@IUP_LINESTYLE%l|_@IUP_CONTINUOUS|_@IUP_DASHED|_@IUP_DOTTED|_@IUP_DASH_DOT|_@IUP_DASH_DOT_DOT|\n"
     "_@IUP_LINEWIDTH%i[1,,]\n"
-    "_@IUP_MARKSTYLE%l|_@IUP_PLUS|_@IUP_STAR|_@IUP_CIRCLE|_@IUP_X|_@IUP_BOX|_@IUP_DIAMOND|_@IUP_HOLLOW_CIRCLE|_@IUP_HOLLOW_BOX|_@IUP_HOLLOW_DIAMOND|\n"
+    "_@IUP_MARKSTYLE%l|_@IUP_PLUS|_@IUP_STAR|_@IUP_CIRCLE|_@IUP_X|_@IUP_MARK_BOX|_@IUP_DIAMOND|_@IUP_HOLLOW_CIRCLE|_@IUP_HOLLOW_BOX|_@IUP_HOLLOW_DIAMOND|\n"
     "_@IUP_MARKSIZE%i[1,,]\n"
     "_@IUP_BARSPACING%i[0,100]\n"
     "_@IUP_BAROUTLINE%b[false,true]\n"
@@ -2893,7 +2893,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_STAR", "Star");
     IupSetLanguageString("IUP_CIRCLE", "Circle");
     IupSetLanguageString("IUP_X", "X");
-    IupSetLanguageString("IUP_BOX", "Box");
+    IupSetLanguageString("IUP_MARK_BOX", "Box");
     IupSetLanguageString("IUP_DIAMOND", "Diamond");
     IupSetLanguageString("IUP_HOLLOW_CIRCLE", "Hollow Circle");
     IupSetLanguageString("IUP_HOLLOW_BOX", "Hollow Box");
@@ -2915,6 +2915,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_TITLE", "Title");
     IupSetLanguageString("IUP_LEGEND", "Legend");
     IupSetLanguageString("IUP_LEGENDBOX", "Legend Box");
+    IupSetLanguageString("IUP_BOX", "Box");
     IupSetLanguageString("IUP_GRID", "Grid");
     IupSetLanguageString("IUP_GRIDMINOR", "Grid Minor");
     IupSetLanguageString("IUP_XAXIS", "X Axis");
@@ -3027,7 +3028,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_STAR", "Estrela");
     IupSetLanguageString("IUP_CIRCLE", "CÌrculo");
     IupSetLanguageString("IUP_X", "X");
-    IupSetLanguageString("IUP_BOX", "Caixa");
+    IupSetLanguageString("IUP_MARK_BOX", "Caixa");
     IupSetLanguageString("IUP_DIAMOND", "Diamante");
     IupSetLanguageString("IUP_HOLLOW_CIRCLE", "CÌrculo Oco");
     IupSetLanguageString("IUP_HOLLOW_BOX", "Caixa Oca");
@@ -3049,6 +3050,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_TITLE", "TÌtulo");
     IupSetLanguageString("IUP_LEGEND", "Legenda");
     IupSetLanguageString("IUP_LEGENDBOX", "Caixa da Legenda");
+    IupSetLanguageString("IUP_BOX", "Caixa");
     IupSetLanguageString("IUP_GRID", "Grade");
     IupSetLanguageString("IUP_GRIDMINOR", "Grade Secund·ria");
     IupSetLanguageString("IUP_XAXIS", "Eixo X");
@@ -3191,7 +3193,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_STAR", "Estrella");
     IupSetLanguageString("IUP_CIRCLE", "Circulo");
     IupSetLanguageString("IUP_X", "X");
-    IupSetLanguageString("IUP_BOX", "Caja");
+    IupSetLanguageString("IUP_MARK_BOX", "Caja");
     IupSetLanguageString("IUP_DIAMOND", "Diamante");
     IupSetLanguageString("IUP_HOLLOW_CIRCLE", "Circulo VacÌo");
     IupSetLanguageString("IUP_HOLLOW_BOX", "Caja VacÌa");
@@ -3213,6 +3215,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_TITLE", "TÌtulo");
     IupSetLanguageString("IUP_LEGEND", "Leyenda");
     IupSetLanguageString("IUP_LEGENDBOX", "Caja de Leyenda");
+    IupSetLanguageString("IUP_BOX", "Cuadro");
     IupSetLanguageString("IUP_GRID", "Grilla");
     IupSetLanguageString("IUP_GRIDMINOR", "Grilla Secundaria");
     IupSetLanguageString("IUP_XAXIS", "Eje X");
@@ -3355,7 +3358,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_STAR", "Hvezdicka");
     IupSetLanguageString("IUP_CIRCLE", "Krouzek");
     IupSetLanguageString("IUP_X", "X");
-    IupSetLanguageString("IUP_BOX", "Ctverecek");
+    IupSetLanguageString("IUP_MARK_BOX", "Ctverecek");
     IupSetLanguageString("IUP_DIAMOND", "Diamant");
     IupSetLanguageString("IUP_HOLLOW_CIRCLE", "Pr·zdn˝ krouzek");
     IupSetLanguageString("IUP_HOLLOW_BOX", "Pr·zdn˝ ctverecek");
@@ -3377,6 +3380,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
     IupSetLanguageString("IUP_TITLE", "N·zev");
     IupSetLanguageString("IUP_LEGEND", "Legenda");
     IupSetLanguageString("IUP_LEGENDBOX", "R·mecek legendy");
+    IupSetLanguageString("IUP_BOX", "OhranicenÌ");
     IupSetLanguageString("IUP_GRID", "MrÌzka");
     IupSetLanguageString("IUP_GRIDMINOR", "Sekund·rnÌ mrÌzka");
     IupSetLanguageString("IUP_XAXIS", "Osa X");
@@ -3491,7 +3495,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
       IupSetLanguageString("IUP_STAR", "Hvƒõzdiƒçka");
       IupSetLanguageString("IUP_CIRCLE", "Krou≈æek");
       IupSetLanguageString("IUP_X", "X");
-      IupSetLanguageString("IUP_BOX", "ƒåtvereƒçek");
+      IupSetLanguageString("IUP_MARK_BOX", "ƒåtvereƒçek");
       IupSetLanguageString("IUP_DIAMOND", "Diamant");
       IupSetLanguageString("IUP_HOLLOW_CIRCLE", "Pr√°zdn√Ω krou≈æek");
       IupSetLanguageString("IUP_HOLLOW_BOX", "Pr√°zdn√Ω ƒçtvereƒçek");
@@ -3513,6 +3517,7 @@ static void iPlotSetClassUpdate(Iclass* ic)
       IupSetLanguageString("IUP_TITLE", "N√°zev");
       IupSetLanguageString("IUP_LEGEND", "Legenda");
       IupSetLanguageString("IUP_LEGENDBOX", "R√°meƒçek legendy");
+      IupSetLanguageString("IUP_BOX", "Ohraniƒçen√≠");
       IupSetLanguageString("IUP_GRID", "M≈ô√≠≈æka");
       IupSetLanguageString("IUP_GRIDMINOR", "Sekund√°rn√≠ m≈ô√≠≈æka");
       IupSetLanguageString("IUP_XAXIS", "Osa X");
