@@ -1692,6 +1692,34 @@ else
   $(LHDIR): ;
 endif
 
+#---------------------------------#
+# Generate language file
+.PHONY: generate-lang
+generate-lang: $(PROJDIR)/src/lang/iup_l10n_gen.h
+
+$(PROJDIR)/lang/iup_l10n.c: $(PROJDIR)/lang/iup_l10n_gen.h
+$(PROJDIR)/lang/iup_l10n_gen.h: $(PROJDIR)/lang/*.utf-8 $(PROJDIR)/lang/*.latin1
+	@echo ''; echo 'Tecmake: generating language file $(@F) from $(^F)'
+	@> $(@)
+	@for file in $(^) ; do \
+	  fname=`echo $$file | sed -e "s|.*/||"`; \
+	  lng=`echo $$fname | cut -d"." -f1 | tr "-" "_"`; \
+	  enc=`echo $$fname | cut -d"." -f2 | tr "-" "_"`; \
+	  cat $$file | awk -v lng="$$lng" -v enc="$$enc" ' \
+	    (/^[[:blank:]]*$$/ || /^[[:space:]]*#/) { NR--; next } \
+	    /^--- .* ---/ { if (NR!=1) { print "  {0, 0}\n};\n" }; NR=0; group=$$2; next } \
+	    (NR == 1) { print "iLocalString l10n_" lng "_" enc "_" group "[] = {"; } \
+	    (NR%3 == 1) { var=$$1; } \
+	    (NR%3 == 2) { eng=$$0; } \
+	    (NR%3 == 0) { l10n=$$0; print "  { \"" var "\", \"" l10n "\" },"; } \
+	    END { print "  {0, 0}\n};\n" } \
+	  ' \
+	  >> $(@); \
+	done
+	@echo "iLangMap LANGS[] = {" >> $(@)
+	@sed -n 's/iLocalString \(.*\)\[.*/  { "\1", \1 },/p ' $(@) >> $(@)
+	@echo -e "  {0, 0}\n};" >> $(@)
+
 
 #---------------------------------#
 # Compilation Rules

@@ -17,6 +17,7 @@
 #include "iup_object.h"
 #include "iup_attrib.h"
 #include "iup_str.h"
+#include "iup_l10n.h"
 #include "iup_matrixex.h"
 
 
@@ -369,98 +370,9 @@ void iupMatrixExSetClassUpdateSort(Iclass* ic)
     IupSetLanguageString("IUP_FIRSTLINE", "First Line");
     IupSetLanguageString("IUP_LASTLINE", "Last Line");
   }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "PORTUGUESE"))
+  else
   {
-    IupSetLanguageString("IUP_SORTBYCOLUMN", "Classificar Linhas por Coluna");
-    IupSetLanguageString("IUP_INVERT", "Inverter");
-    IupSetLanguageString("IUP_SORT", "Ordenar");
-
-    IupSetLanguageString("IUP_INVERT_TIP", "Apenas inverte a ordenação corrente. Novos parâmetros são ignorados.");
-
-    IupSetLanguageString("IUP_ORDER", "Ordem");
-    IupSetLanguageString("IUP_ASCENDING", "Ascendente");
-    IupSetLanguageString("IUP_DESCENDING", "Descendente");
-
-    IupSetLanguageString("IUP_ALLLINES", "Todas as Linhas");
-    IupSetLanguageString("IUP_CASESENSITIVE", "Diferenciar maiúsculas e minúsculas");
-    IupSetLanguageString("IUP_COLUMN", "Coluna");
-    IupSetLanguageString("IUP_FIRSTLINE", "Primeira Linha");
-    IupSetLanguageString("IUP_LASTLINE", "Última Linha");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-
-      IupSetLanguageString("IUP_INVERT_TIP", "Apenas inverte a ordenaÃ§Ã£o corrente. Novos parÃ¢metros sÃ£o ignorados.");
-      IupSetLanguageString("IUP_CASESENSITIVE", "Diferenciar maiÃºsculas e minÃºsculas");
-      IupSetLanguageString("IUP_LASTLINE", "Ãšltima Linha");
-    }
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "SPANISH"))
-  {
-    IupSetLanguageString("IUP_SORTBYCOLUMN", "Ordenar Lineas por Columnas");
-    IupSetLanguageString("IUP_INVERT", "Invertir");
-    IupSetLanguageString("IUP_SORT", "Ordenar");
-
-    IupSetLanguageString("IUP_INVERT_TIP", "Sólo invertir el orden actual. Los nuevos parámetros son ignorados.");
-
-    IupSetLanguageString("IUP_ORDER", "Ordenar");
-    IupSetLanguageString("IUP_ASCENDING", "Ascendente");
-    IupSetLanguageString("IUP_DESCENDING", "Descendente");
-
-    IupSetLanguageString("IUP_ALLLINES", "Todas las Lineas");
-    IupSetLanguageString("IUP_CASESENSITIVE", "Distinguir Mayúsculas y Minúsculas");
-    IupSetLanguageString("IUP_COLUMN", "Columna");
-    IupSetLanguageString("IUP_FIRSTLINE", "Primera Linea");
-    IupSetLanguageString("IUP_LASTLINE", "Última Linea");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-
-      IupSetLanguageString("IUP_INVERT_TIP", "SÃ³lo invertir el orden actual. Los nuevos parÃ¡metros son ignorados.");
-      IupSetLanguageString("IUP_CASESENSITIVE", "Distinguir MayÃºsculas y MinÃºsculas");
-      IupSetLanguageString("IUP_LASTLINE", "Ãšltima Linea");
-    }
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
-  {
-    IupSetLanguageString("IUP_SORTBYCOLUMN", "Radit podle sloupcu");
-    IupSetLanguageString("IUP_INVERT", "Invertovat");
-    IupSetLanguageString("IUP_SORT", "Seradit");
-
-    IupSetLanguageString("IUP_INVERT_TIP", "Invertuje pouze aktuální razení. Nové parametry jsou ignorovány.");
-
-    IupSetLanguageString("IUP_ORDER", "Poradí");
-    IupSetLanguageString("IUP_ASCENDING", "Vzestupne");
-    IupSetLanguageString("IUP_DESCENDING", "Sestupne");
-
-    IupSetLanguageString("IUP_ALLLINES", "Vsechny rádky");
-    IupSetLanguageString("IUP_CASESENSITIVE", "Rozlisovat velikost písmen");
-    IupSetLanguageString("IUP_COLUMN", "Sloupec");
-    IupSetLanguageString("IUP_FIRSTLINE", "První rádek");
-    IupSetLanguageString("IUP_LASTLINE", "Poslední rádek");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-      IupSetLanguageString("IUP_SORTBYCOLUMN", "Å˜adit podle sloupcÅ¯");
-      IupSetLanguageString("IUP_SORT", "SeÅ™adit");
-
-      IupSetLanguageString("IUP_INVERT_TIP", "Invertuje pouze aktuÃ¡lnÃ­ Å™azenÃ­. NovÃ© parametry jsou ignorovÃ¡ny.");
-
-      IupSetLanguageString("IUP_ORDER", "PoÅ™adÃ­");
-      IupSetLanguageString("IUP_ASCENDING", "VzestupnÄ›");
-      IupSetLanguageString("IUP_DESCENDING", "SestupnÄ›");
-
-      IupSetLanguageString("IUP_ALLLINES", "VÅ¡echny Å™Ã¡dky");
-      IupSetLanguageString("IUP_CASESENSITIVE", "RozliÅ¡ovat velikost pÃ­smen");
-      IupSetLanguageString("IUP_FIRSTLINE", "PrvnÃ­ Å™Ã¡dek");
-      IupSetLanguageString("IUP_LASTLINE", "PoslednÃ­ Å™Ã¡dek");
-    }
+    iupSetLangStrings(IupGetGlobal("LANGUAGE"), IupGetInt(NULL, "UTF8MODE"), "matrixex_sort");
   }
 }
 

@@ -32,7 +32,7 @@ ifdef DBG
   DEFINES += IUP_ASSERT
 endif  
 
-INCLUDES = ../include .
+INCLUDES = ../include . ../lang
 
 # Windows XP minimum
 WIN32VER = 0x0501
@@ -56,6 +56,7 @@ SRC = iup_array.c iup_callback.c iup_dlglist.c iup_attrib.c iup_focus.c iup_font
       iup_flatscrollbar.c iup_flatscrollbox.c iup_gauge.c iup_dial.c iup_colorbar.c \
       iup_colorbrowser.c iup_colorhsi.c iup_flatlabel.c iup_dropbutton.c iup_flattoggle.c \
       iup_flatseparator.c iup_space.c
+SRC += ../lang/iup_l10n.c
 
 ifdef USE_HAIKU
   # Since Haiku has no GTK and no Motif, we can only use the native implementation

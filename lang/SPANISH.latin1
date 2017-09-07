@@ -1,0 +1,1009 @@
+###################
+--- stdmessages ---
+###################
+
+IUP_ERROR  # dialog title
+Error!
+Error!
+
+IUP_ATTENTION  # dialog title
+Attention!
+¡Advertencia!
+
+IUP_YES
+Yes
+Si
+
+IUP_NO
+No
+No
+
+IUP_INVALIDDIR  # error text in a dialog
+Invalid directory.
+Directorio inválido.
+
+IUP_FILEISDIR  # error text in a dialog
+The selected name is a directory.
+El nombre seleccionado es un directorio.
+
+IUP_FILENOTEXIST  # error text in a dialog
+File does not exist.
+Archivo inexistente.
+
+IUP_FILEOVERWRITE  # question in in ask dialog
+Overwrite existing file?
+¿Sobrescribir archivo?
+
+IUP_CREATEFOLDER
+Create Folder
+Crear Directorio
+
+IUP_NAMENEWFOLDER  # label in a file dialog
+Name of the new folder:
+Nombre del nuevo directorio:
+
+IUP_SAVEAS  # file dialog title
+Save As
+Guardar Como
+
+IUP_OPEN  # file dialog title
+Open
+Abrir
+
+IUP_SELECTDIR  # file dialog title
+Select Directory
+Seleccionar Directorio
+
+IUP_OK  # OK button label
+OK
+Aceptar
+
+IUP_CANCEL  # Cancel button label
+Cancel
+Cancelar
+
+IUP_RETRY  # button label
+Retry
+Reintentar
+
+IUP_APPLY  # button label
+Apply
+Aplicar
+
+IUP_RESET  # button label
+Reset
+Reiniciar
+
+IUP_GETCOLOR  # color dialog title
+Color Selection
+Selección de Color
+
+IUP_HELP  # button label
+Help
+Ayuda
+
+IUP_RED  # color label in color dialog
+&Red:
+&Rojo:
+
+IUP_GREEN  # color label in color dialog
+&Green:
+&Verde:
+
+IUP_BLUE  # color label in color dialog
+&Blue:
+&Azul:
+
+IUP_HUE  # hue label in color dialog
+&Hue:
+&Matiz:
+
+IUP_SATURATION  # saturation label in color dialog
+&Saturation:
+&Saturación:
+
+IUP_INTENSITY  # intensity label in color dialog
+&Intensity:
+&Intensidad:
+
+IUP_OPACITY  # opacity label in color dialog
+&Opacity:
+&Opacidad:
+
+IUP_PALETTE  # palette label in color dialog
+&Palette:
+&Paleta:
+
+IUP_TRUE
+True
+Verdadero
+
+IUP_FALSE
+False
+Falso
+
+IUP_FAMILY  # font family
+Family:
+Familia:
+
+IUP_STYLE  # font style
+Style:
+Estilo:
+
+IUP_SIZE  # font size
+Size:
+Tamaño:
+
+IUP_SAMPLE  # sample displaying selected font
+Sample:
+Ejemplo:
+
+IUP_ERRORFILEOPEN  # error text in a dialog
+Failed to open file.
+Error al abrir el archivo.
+
+IUP_ERRORFILESAVE  # error text in a dialog
+Failed to save file.
+Error al guardar el archivo.
+
+IUP_LUAERROR  # title of an error dialog
+Lua Error
+Error de Lua
+
+IUP_CONTINUE  # button label
+Continue
+Continúe
+
+IUP_COPYTOCLIPBOARD  # tooltip for Copy button
+Copy text to clipboard.
+Copiar texto para un área de transferencia.
+
+IUP_COPY  # button label
+Copy
+Copiar
+
+IUP_EXIT  # button label
+Exit
+Salir
+
+
+############
+--- plot ---
+############
+
+IUP_EXPORT  # menu item
+Export
+Exportar
+
+IUP_COPY  # menu item
+Copy
+Copiar
+
+IUP_PRINTDLG  # menu item
+Print...
+Imprimir...
+
+IUP_ZOOMINAC  # menu item
+Zoom In\t+
+Acercar\t+
+
+IUP_ZOOMOUTAC  # menu item
+Zoom Out\t-
+Alejar\t-
+
+IUP_RESETZOOMAC  # menu item
+Reset Zoom\t.
+Restablecer Vista\t.
+
+IUP_SHOWHIDELEGEND  # menu item
+Show/Hide Legend
+Mostrar/Ocultar Leyenda
+
+IUP_SHOWHIDEGRID  # menu item
+Show/Hide Grid
+Mostrar/Ocultar Grilla
+
+IUP_ERRORINVALIDFORMULA  # error text
+Invalid Formula.
+Fórmula Inválida.
+
+IUP_PROPERTIESDLG  # menu item and dialog title
+Properties...
+Propiedades...
+
+IUP_DATASETPROPERTIESDLG  # menu item and dialog title
+Data Set Properties...
+Propiedades de los Datos...
+
+IUP_DATASETVALUESDLG  # menu item and dialog title
+Data Set Values...
+Valores de los Datos...
+
+IUP_NAME  # name of data set (label in a dialog)
+Name:
+Nombre:
+
+IUP_COLOR  # color of data set (label in a dialog)
+Color:
+Color:
+
+IUP_MODE  # mode of data set (label for a dropbox)
+Mode:
+Modo:
+
+IUP_LINES  # mode value of IUP_MODE (dropbox item)
+Lines
+Lineas
+
+IUP_MARKS  # mode value of IUP_MODE (dropbox item)
+Marks
+Marcas
+
+IUP_MARKSLINES  # mode value of IUP_MODE (dropbox item)
+Marks & Lines
+Marcas & Lineas
+
+IUP_BARS  # mode value of IUP_MODE (dropbox item)
+Bars
+Barras
+
+IUP_AREA  # mode value of IUP_MODE (dropbox item)
+Area
+Área
+
+IUP_STEMS  # mode value of IUP_MODE (dropbox item)
+Stems
+Plotear
+
+IUP_MARKSSTEMS  # mode value of IUP_MODE (dropbox item)
+Marks & Stems
+Marcas & Plotear
+
+IUP_HORIZONTALBARS  # mode value of IUP_MODE (dropbox item)
+Horizontal Bars
+Barras Horizontales
+
+IUP_MULTIBARS  # mode value of IUP_MODE (dropbox item)
+Multiple Bars
+Barras Múltiples
+
+IUP_ERRORBARS  # mode value of IUP_MODE (dropbox item)
+Error Bars
+Barras de Error
+
+IUP_STEPS  # mode value of IUP_MODE (dropbox item)
+Steps
+Pasos
+
+IUP_PIE  # mode value of IUP_MODE (dropbox item)
+Pie
+Pastel
+
+IUP_LINESTYLE  # line style (label for a dropbox)
+Line Style:
+Estilo de Linea:
+
+IUP_CONTINUOUS  # line style value of IUP_LINESTYLE (dropbox item)
+Continuous
+Continua
+
+IUP_DASHED  # line style value of IUP_LINESTYLE (dropbox item)
+Dashed
+Trazos
+
+IUP_DOTTED  # line style value of IUP_LINESTYLE (dropbox item)
+Dotted
+Punteada
+
+IUP_DASH_DOT  # line style value of IUP_LINESTYLE (dropbox item)
+Dash Dot
+Trazo Punto
+
+IUP_DASH_DOT_DOT  # line style value of IUP_LINESTYLE (dropbox item)
+Dash Dot Dot
+Trazo Punto Punto
+
+IUP_LINEWIDTH  # line width of data set (label in a dialog)
+Line Width:
+Ancho de Linea:
+
+IUP_MARKSTYLE  # property of data set (label in a dialog)
+Mark Style:
+Estilo de Marca:
+
+IUP_BAROUTLINE  # property of data set (label in a dialog)
+Bar Outline:
+Contorno de Barra:
+
+IUP_BARSPACING  # property of data set (label in a dialog)
+Bar Spacing:
+Espaciado de Barras:
+
+IUP_BAROUTLINECOLOR  # property of data set (label in a dialog)
+Bar Outline Color:
+Color del Contorno de Barra:
+
+IUP_PLUS  # value of IUP_MARKSTYLE (dropbox item)
+Plus
+Mas
+
+IUP_STAR  # value of IUP_MARKSTYLE (dropbox item)
+Star
+Estrella
+
+IUP_CIRCLE  # value of IUP_MARKSTYLE (dropbox item)
+Circle
+Circulo
+
+IUP_X  # value of IUP_MARKSTYLE (dropbox item)
+X
+X
+
+IUP_MARK_BOX  # value of IUP_MARKSTYLE (dropbox item)
+Box
+Caja
+
+IUP_DIAMOND  # value of IUP_MARKSTYLE (dropbox item)
+Diamond
+Diamante
+
+IUP_HOLLOW_CIRCLE  # value of IUP_MARKSTYLE (dropbox item)
+Hollow Circle
+Circulo Vacío
+
+IUP_HOLLOW_BOX  # value of IUP_MARKSTYLE (dropbox item)
+Hollow Box
+Caja Vacía
+
+IUP_HOLLOW_DIAMOND  # value of IUP_MARKSTYLE (dropbox item)
+Hollow Diamond
+Diamante Vacío
+
+IUP_MARKSIZE  # property of data set (label in a dialog)
+Mark Size:
+Tamaño de Marca:
+
+IUP_AREATRANSPARENCY  # property of data set (label in a dialog)
+Area Transparency:
+Transparencia de Área:
+
+IUP_PIERADIUS  # property of data set for Pie chart (label in a dialog)
+Pie Radius:
+Radio del Pastel:
+
+IUP_PIESTARTANGLE  # property of data set for Pie chart (label in a dialog)
+Pie Start Angle:
+Ángulo de Inicio del Pastel:
+
+IUP_PIECONTOUR  # property of data set for Pie chart (label in a dialog)
+Pie Contour:
+Contorno del Pastel:
+
+IUP_PIEHOLE  # property of data set for Pie chart (label in a dialog)
+Pie Hole:
+Agujero del Pastel:
+
+IUP_PIESLICELABEL  # property of data set for Pie chart (label in a dialog)
+Pie Slice Label:
+Etiqueta de Porción de Pastel:
+
+IUP_PIESLICELABELPOS  # property of data set for Pie chart (label in a dialog)
+Pie Slice Label Pos.:
+Pos. de Etiqueta en la Porción:
+
+IUP_PERCENT  # value of IUP_PIESLICELABEL property (dropbox item)
+Percent
+Porcentaje
+
+IUP_NONE  # value of IUP_PIESLICELABEL property (dropbox item)
+None
+Ninguno
+
+IUP_CLOSE  # dialog button
+Close
+Cerrar
+
+IUP_BACKGROUND  # plot background (label in a tree)
+Background
+Fondo
+
+IUP_TITLE  # plot title (label in a tree)
+Title
+Título
+
+IUP_LEGEND  # plot legend (label in a tree)
+Legend
+Leyenda
+
+IUP_LEGENDBOX  # box around the plot legend (label in a tree)
+Legend Box
+Caja de Leyenda
+
+IUP_BOX  # box around the plot (label in a tree)
+Box
+Caja
+
+IUP_GRID  # main grid used for the plot (label in a tree)
+Grid
+Grilla
+
+IUP_GRIDMINOR  # secondary grid used for the plot (label in a tree)
+Grid Minor
+Grilla Secundaria
+
+IUP_XAXIS  # X axis (label in a tree)
+X Axis
+Eje X
+
+IUP_YAXIS  # Y axis (label in a tree)
+Y Axis
+Eje Y
+
+IUP_AXISLABEL  # description of an axis (label in a tree)
+Axis Label
+Etiquetas de Ejes
+
+IUP_AXISTICKS  # settings of axis ticks (label in a tree)
+Axis Ticks
+Marcas en los Ejes
+
+IUP_AXISTICKSNUMBER  # settings of axis tics numbers (label in a tree)
+Axis Ticks Number
+Números en las Marcas
+
+IUP_TEXT  # axis name (text field label in a dialog)
+Text:
+Texto:
+
+IUP_SHOW  # checkbox name
+Show:
+Mostrar:
+
+IUP_HORIZONTAL  # orientation of a grid lines (item in a drobox)
+Horizontal
+Horizontal
+
+IUP_VERTICAL  # orientation of a grid lines (item in a drobox)
+Vertical
+Vertical
+
+IUP_CHANGESNOTAPPLIEDAPPLY
+Changes Not Applied. Apply?
+Hay Modificaciones. ¿Aplicarlas?
+
+IUP_MARGIN
+Margin
+Margen
+
+IUP_LEFT  # left margin
+Left:
+Izquierdo:
+
+IUP_RIGHT  # right margin
+Right:
+Derecho:
+
+IUP_TOP  # top margin
+Top:
+Superior:
+
+IUP_BOTTOM  # bottom margin
+Bottom:
+Inferior:
+
+IUP_FONTSTYLE
+Font Style:
+Estilo de Fuente:
+
+IUP_FONTSIZE
+Font Size:
+Tamaño de Fuente:
+
+IUP_PLAIN  # value for IUP_FONTSTYLE (dropbox item)
+Plain
+Plano
+
+IUP_BOLD  # value for IUP_FONTSTYLE (dropbox item)
+Bold
+Negrita
+
+IUP_ITALIC  # value for IUP_FONTSTYLE (dropbox item)
+Italic
+Itálica
+
+IUP_BOLDITALIC  # value for IUP_FONTSTYLE (dropbox item)
+Bold Italic
+Negrita Itálica
+
+IUP_POSITION  # position of plot legend (dropbox label)
+Position:
+Posición:
+
+IUP_POSXY  # text field label
+(x,y):
+(x,y):
+
+IUP_TOPRIGHT  # position of plot legend (dropbox item)
+Top Right
+Arriba a la Derecha
+
+IUP_TOPLEFT  # position of plot legend (dropbox item)
+Top Left
+Arriba a la Izquierda
+
+IUP_BOTTOMRIGHT  # position of plot legend (dropbox item)
+Bottom Right
+Abajo a la Derecha
+
+IUP_BOTTOMLEFT  # position of plot legend (dropbox item)
+Bottom Left
+Abajo a la Izquierda
+
+IUP_BOTTOMCENTER  # position of plot legend (dropbox item)
+Bottom Center
+Abajo Centrado
+
+IUP_XY  # position of plot legend (dropbox item)
+(x,y)
+(x,y)
+
+IUP_SHOWARROW  # checkbox label
+Show Arrow:
+Mostrar Flecha:
+
+IUP_MIN  # checkbox label
+Min:
+Mínimo:
+
+IUP_MAX  # checkbox label
+Max:
+Máximo:
+
+IUP_REVERSE  # checkbox label
+Reverse:
+Invertir:
+
+IUP_CROSSORIGIN  # checkbox label
+Cross Origin:
+Cruzar Origen:
+
+IUP_CENTERED  # checkbox label
+Centered:
+Centrado:
+
+IUP_SCALE  # dropbox label
+Scale:
+Escala:
+
+IUP_LINEAR  # value of IUP_SCALE (dropbox item)
+Linear
+Lineal
+
+IUP_LOG10  # value of IUP_SCALE (dropbox item)
+Logarithm (base 10)
+Logaritmo (base 10)
+
+IUP_LOG2  # value of IUP_SCALE (dropbox item)
+Logarithm (base 2)
+Logaritmo (base 2)
+
+IUP_LOGN  # value of IUP_SCALE (dropbox item)
+Logarithm (base e)
+Logaritmo (base e)
+
+IUP_SPACING  # checkbox label
+Spacing:
+Espaciamiento:
+
+IUP_MAJORSPAN  # spacing for major division of axis ticks (text field label)
+Major Span:
+Intervalo Principal:
+
+IUP_MINORDIVISION  # spacing for minor division of axis ticks (text field label)
+Minor Division:
+Divisiones Secundarias:
+
+IUP_SIZE  # size of axis ticks (checkbox label)
+Size:
+Tamaño:
+
+IUP_MAJOR  # size for major axis ticks (text field label)
+Major:
+Principal:
+
+IUP_MINOR  # size for minor axis ticks (text field label)
+Minor:
+Secundario:
+
+IUP_ROTATE  # rotation of axis ticks numbers (checkbox label)
+Rotate:
+Rotación:
+
+IUP_ANGLE  # rotation angle of axis ticks numbers (text field label)
+Angle:
+Ángulo:
+
+IUP_VALUE  # value for a parameter (spinbox label)
+Value:
+Valor:
+
+IUP_DECIMALS  # number of decimals for axis ticks numbers (spinbox label)
+Decimals:
+Decimales:
+
+IUP_FORMAT  # axis ticks numbers format (checkbox label)
+Format:
+Formato:
+
+
+##############
+--- matrix ---
+##############
+
+IUP_ERRORINVALIDFORMULA  # error text
+Invalid Formula.
+Fórmula Inválida.
+
+
+################
+--- matrixex ---
+################
+
+IUP_EXPORT  # export to a format (menu item)
+Export
+Exportar
+
+IUP_IMPORT  # menu item
+Import
+Importar
+
+IUP_SETTINGSDLG  # menu item for opening a settings dialog
+Settings...
+Preferencias...
+
+IUP_TEXTSEPARATOR  # dropbox label
+Number Separator:
+Separador de Números:
+
+IUP_OTHERTEXTSEPARATOR  # textbox label
+  - Other Num. Sep.:
+  - Otro Sep. de Núm.:
+
+IUP_DECIMALSYMBOL  # spinbox label
+Decimal Symbol:
+Símbolo Decimal:
+
+IUP_UNDOAC  # menu item
+Undo\tCtrl+Z
+Deshacer\tCtrl+Z
+
+IUP_REDOAC  # menu item
+Redo\tCtrl+Y
+Rehacer\tCtrl+R
+
+IUP_UNDOLISTDLG  # menu item
+Undo List...\tCtrl+U
+Lista de Deshacer...\tCtrl+U
+
+IUP_UNDOLIST  # menu item
+Undo List
+Lista de Deshacer
+
+IUP_CURRENTSTATE  # item in history change list
+Current State
+Estado Actual
+
+IUP_CUTAC  # menu item
+Cut\tCtrl+X
+Cortar\tCtrl+X
+
+IUP_COPYAC  # menu item
+Copy\tCtrl+C
+Copiar\tCtrl+C
+
+IUP_PASTEAC  # menu item
+Paste\tCtrl+V
+Pegar\tCtrl+V
+
+IUP_ERASEAC  # menu item
+Erase\tDel
+Borrar\tDel
+
+IUP_SELECTALLAC  # menu item
+Select All\tCtrl+A
+Seleccionar Todo\tCtrl+T
+
+IUP_FINDDLG  # menu item
+Find...\tCtrl+F
+Localizar...\tCtrl+L
+
+IUP_GOTODLG  # menu item
+Go To...\tCtrl+G
+Ir A...\tCtrl+G
+
+IUP_SORTDLG  # menu item
+Sort...
+Ordenar...
+
+IUP_FREEZE  # menu item
+Freeze
+Congelar
+
+IUP_UNFREEZE  # menu item
+Unfreeze
+Descongelar
+
+IUP_COPYTOSAMECOLUMN  # submenu item
+Copy To (Same Column)
+Copiar A (Misma Columna)
+
+IUP_ALLLINES  # submenu item
+All lines
+Todas las lineas
+
+IUP_HERETOTOP  # submenu item
+Here to top
+De aquí para arriba
+
+IUP_HERETOBOTTOM  # submenu item
+Here to bottom
+De aquí para abajo
+
+IUP_INTERVALDLG  # submenu item
+Interval...
+Intervalo...
+
+IUP_SELECTEDLINES  # submenu item
+Selected lines
+Lineas seleccionadas
+
+IUP_VISIBILITY  # menu item
+Visibility
+Visibilidad
+
+IUP_HIDECOLUMN  # submenu item
+Hide Column
+Ocultar Columna
+
+IUP_SHOWHIDDENCOLUMNS  # submenu item
+Show Hidden Columns
+Mostrar Columnas Ocultas
+
+IUP_HIDELINE  # submenu item
+Hide Line
+Ocultar Linea
+
+IUP_SHOWHIDDENLINES  # submenu item
+Show Hidden Lines
+Mostrar Lineas Ocultas
+
+IUP_COPYTOINTERVAL  # submenu item
+Copy To - Interval
+Copiar A - Intervalo
+
+IUP_GOTO  # dialog title for IUP_GOTODLG
+Go To
+Ir A
+
+IUP_LINE  # spinbox label
+Line:
+Linea:
+
+IUP_COLUMN  # spinbox label
+Column:
+Columna:
+
+IUP_LINESTART  # spinbox label
+Line Start:
+Linea Inicial:
+
+IUP_LINEEND  # spinbox label
+Line End:
+Linea Final:
+
+IUP_UNITS  # label
+Units:
+Unidades:
+
+IUP_DECIMALS  # number of decimals for numbers in matrix (spinbox label)
+Decimals:
+Decimales:
+
+IUP_COLUMNDECIMALS  # dialog title for IUP_COLUMNDECIMALSDLG
+Column Decimals
+Columna de Decimales
+
+IUP_COLUMNDECIMALSDLG  # menu item
+Column Decimals...
+Columna de Decimales...
+
+IUP_COLUMNUNITS  # dialog title for IUP_COLUMNUNITSDLG
+Column Units
+Unidades de Columna
+
+IUP_COLUMNUNITSDLG  # menu item
+Column Units...
+Unidades de Columna...
+
+IUP_ERRORINVALIDSELECTION  # error text
+Invalid Selection.
+Selección inválida.
+
+IUP_ERRORNOTEXT  # error text
+Empty Text.
+Texto vacío.
+
+IUP_ERRORINVALIDDATA  # error text
+Invalid Data.
+Dato inválido.
+
+IUP_ERRORNOSELECTION  # error text
+Empty Selection.
+Selección vacía.
+
+IUP_ERRORINVALIDINTERVAL  # error text
+Invalid Interval.
+Intervalo inválido.
+
+
+#####################
+--- matrixex_find ---
+#####################
+
+IUP_FIND  # dialog title of IUP_FINDDLG dialog
+Find
+Localizar
+
+IUP_FIND_WHAT  # text to find in matrixex (text field label)
+Find what:
+Localizar:
+
+IUP_FIND_NEXT  # button label in IUP_FINDDLG
+Find &Next
+Localizar &Siguiente
+
+IUP_FIND_PREVIOUS  # button label in IUP_FINDDLG
+Find &Previous
+Localizar &Previo
+
+IUP_NOT_FOUND  # find result text
+Not found.
+No se localizó.
+
+IUP_FOUND_AT  # find result text
+Found at
+Se localizó en
+
+IUP_CLOSE  # button label in IUP_FINDDLG
+Close
+Cerrar
+
+IUP_SEARCH  # group name in IUP_FINDDLG
+Search
+Buscar
+
+IUP_MATCH_CASE  # checkbox label
+Match Case
+Distinguir mayúsculas y minúsculas
+
+IUP_MATCH_WHOLE_CELL  # checkbox label
+Match Whole Cell
+Coincidir con la celda
+
+IUP_BY_ROW  # searching option (radiobutton label)
+by Rows
+por Renglones
+
+IUP_BY_COL  # searching option (radiobutton label)
+by Columns
+por Columnas
+
+
+#####################
+--- matrixex_sort ---
+#####################
+
+IUP_SORTBYCOLUMN  # sorting dialog title
+Sort Lines by Column
+Ordenar Lineas por Columnas
+
+IUP_INVERT  # button label
+Invert
+Invertir
+
+IUP_SORT  # button label
+Sort
+Ordenar
+
+IUP_INVERT_TIP  # button tooltip
+Just invert the current sort. New parameters are ignored.
+Sólo invertir el orden actual. Los nuevos parámetros son ignorados.
+
+IUP_ORDER  # group name in sort dialog
+Order
+Ordenar
+
+IUP_ASCENDING  # sorting option (radiobutton label)
+Ascending
+Ascendente
+
+IUP_DESCENDING  # sorting option (radiobutton label)
+Descending
+Descendente
+
+IUP_ALLLINES  # filter for sorting
+All Lines
+Todas las Lineas
+
+IUP_CASESENSITIVE  # checkbox label
+Case Sensitive
+Distinguir Mayúsculas y Minúsculas
+
+IUP_COLUMN  # filter for sorting
+Column
+Columna
+
+IUP_FIRSTLINE  # filter for sorting
+First Line
+Primera Linea
+
+IUP_LASTLINE  # filter for sorting
+Last Line
+Última Linea
+
+
+#####################
+--- matrixex_undo ---
+#####################
+
+IUP_PASTECLIP  # action in history change list
+Paste from Clipboard
+Pegar Desde el Portapapeles
+
+IUP_PASTEDATA  # action in history change list
+Paste from Buffer
+Pegar Desde el Buffer
+
+IUP_PASTEFILE  # action in history change list
+Paste from File (Import)
+Pegar Desde Archivo (Importar)
+
+IUP_COPYCOLTO_ALL  # action in history change list
+Copy To All Lines
+Copiar Para Todas las Lineas
+
+IUP_COPYCOLTO_TOP  # action in history change list
+Copy To Top
+Copiar Para Arriba
+
+IUP_COPYCOLTO_BOTTOM  # action in history change list
+Copy To Bottom
+Copiar Para Abajo
+
+IUP_COPYCOLTO_MARKED  # action in history change list
+Copy To Marked
+Copiar Para Seleccionadas
+
+IUP_COPYCOLTO_INTERVAL  # action in history change list
+Copy To Interval
+Copiar Para Intervalo
+
+IUP_UNDONAME  # action prefix in history change list
+Undo
+Deshacer
+
+IUP_REDONAME  # action prefix in history change list
+Redo
+Rehacer
+
+IUP_SETCELL  # action in history change list
+Set Cell
+Modificar Celda
+
+IUP_EDITCELL  # action in history change list
+Edit Cell
+Editar Celda
+
+IUP_CLEARVALUE  # action in history change list
+Clear Value
+Limpiar Valores

@@ -16,6 +16,7 @@
 #include "iup_object.h"
 #include "iup_attrib.h"
 #include "iup_str.h"
+#include "iup_l10n.h"
 #include "iup_matrixex.h"
 
 
@@ -356,7 +357,6 @@ void iupMatrixExSetClassUpdateFind(Iclass* ic)
 {
   (void)ic;
 
-
   if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "ENGLISH"))
   {
     IupSetLanguageString("IUP_FIND", "Find");
@@ -374,94 +374,9 @@ void iupMatrixExSetClassUpdateFind(Iclass* ic)
     IupSetLanguageString("IUP_BY_ROW", "by Rows");
     IupSetLanguageString("IUP_BY_COL", "by Columns");
   }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "PORTUGUESE"))
+  else
   {
-    IupSetLanguageString("IUP_FIND", "Localizar");
-    IupSetLanguageString("IUP_FIND_WHAT", "Localizar o que:");
-    IupSetLanguageString("IUP_FIND_NEXT", "Localizar &PrÛximo");
-    IupSetLanguageString("IUP_FIND_PREVIOUS", "Localizar &Anterior");
-    IupSetLanguageString("IUP_NOT_FOUND", "N„o encontrado.");
-    IupSetLanguageString("IUP_FOUND_AT", "Encontrado em");
-
-    IupSetLanguageString("IUP_CLOSE", "Fechar");
-    IupSetLanguageString("IUP_SEARCH", "Pesquisar");
-
-    IupSetLanguageString("IUP_MATCH_CASE", "Diferenciar mai˙sculas e min˙sculas");
-    IupSetLanguageString("IUP_MATCH_WHOLE_CELL", "Coindidir cÈlula inteira");
-    IupSetLanguageString("IUP_BY_ROW", "por Linhas");
-    IupSetLanguageString("IUP_BY_COL", "por Colunas");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-
-      IupSetLanguageString("IUP_NOT_FOUND", "N√£o encontrado.");
-      IupSetLanguageString("IUP_FIND_NEXT", "Localizar &Pr√≥ximo");
-      IupSetLanguageString("IUP_MATCH_CASE", "Diferenciar mai√∫sculas e min√∫sculas");
-      IupSetLanguageString("IUP_MATCH_WHOLE_CELL", "Coindidir c√©lula inteira");
-    }
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "SPANISH"))
-  {
-    IupSetLanguageString("IUP_FIND", "Localizar");
-    IupSetLanguageString("IUP_FIND_WHAT", "Localizar:");
-    IupSetLanguageString("IUP_FIND_NEXT", "Localizar &Siguiente");
-    IupSetLanguageString("IUP_FIND_PREVIOUS", "Localizar &Previo");
-    IupSetLanguageString("IUP_NOT_FOUND", "No se localizÛ.");
-    IupSetLanguageString("IUP_FOUND_AT", "Se localizÛ en");
-
-    IupSetLanguageString("IUP_CLOSE", "Cerrar");
-    IupSetLanguageString("IUP_SEARCH", "Buscar");
-
-    IupSetLanguageString("IUP_MATCH_CASE", "Distinguir may˙sculas y min˙sculas");
-    IupSetLanguageString("IUP_MATCH_WHOLE_CELL", "Coincidir con la celda");
-    IupSetLanguageString("IUP_BY_ROW", "por Renglones");
-    IupSetLanguageString("IUP_BY_COL", "por Columnas");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-
-      IupSetLanguageString("IUP_NOT_FOUND", "No se localiz√≥.");
-      IupSetLanguageString("IUP_FOUND_AT", "Se localiz√≥ en");
-      IupSetLanguageString("IUP_MATCH_CASE", "Distinguir may√∫sculas y min√∫sculas");
-    }
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
-  {
-    IupSetLanguageString("IUP_FIND", "NajÌt");
-    IupSetLanguageString("IUP_FIND_WHAT", "NajÌt co:");
-    IupSetLanguageString("IUP_FIND_NEXT", "NajÌt &n·sledujÌcÌ");
-    IupSetLanguageString("IUP_FIND_PREVIOUS", "NajÌt &predch·zejÌcÌ");
-    IupSetLanguageString("IUP_NOT_FOUND", "Nenalezeno.");
-    IupSetLanguageString("IUP_FOUND_AT", "Nalezeno na");
-
-    IupSetLanguageString("IUP_CLOSE", "ZavrÌt");
-    IupSetLanguageString("IUP_SEARCH", "Hledat");
-
-    IupSetLanguageString("IUP_MATCH_CASE", "Rozlisovat velikost pÌsmen");
-    IupSetLanguageString("IUP_MATCH_WHOLE_CELL", "Porovnat celou bunku");
-    IupSetLanguageString("IUP_BY_ROW", "po r·dcÌch");
-    IupSetLanguageString("IUP_BY_COL", "po sloupcÌch");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-      IupSetLanguageString("IUP_FIND", "Naj√≠t");
-      IupSetLanguageString("IUP_FIND_WHAT", "Naj√≠t co:");
-      IupSetLanguageString("IUP_FIND_NEXT", "Naj√≠t &n√°sleduj√≠c√≠");
-      IupSetLanguageString("IUP_FIND_PREVIOUS", "Naj√≠t &p≈ôedch√°zej√≠c√≠");
-
-      IupSetLanguageString("IUP_CLOSE", "Zav≈ô√≠t");
-
-      IupSetLanguageString("IUP_MATCH_CASE", "Rozli≈°ovat velikost p√≠smen");
-      IupSetLanguageString("IUP_MATCH_WHOLE_CELL", "Porovnat celou bu≈àku");
-      IupSetLanguageString("IUP_BY_ROW", "po ≈ô√°dc√≠ch");
-      IupSetLanguageString("IUP_BY_COL", "po sloupc√≠ch");
-    }
+    iupSetLangStrings(IupGetGlobal("LANGUAGE"), IupGetInt(NULL, "UTF8MODE"), "matrixex_find");
   }
 }
 

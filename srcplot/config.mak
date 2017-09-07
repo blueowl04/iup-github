@@ -16,7 +16,7 @@ endif
 
 DEF_FILE = iup_plot.def
 
-INCLUDES = ../include ../src ../srccd
+INCLUDES = ../include ../src ../srccd ../lang
 LDIR = ../lib/$(TEC_UNAME)  
 LIBS = iup iupgl iupcd cdgl 
 
@@ -29,6 +29,7 @@ ifdef USE_CONTEXTPLUS
 endif
 
 SRC = iup_plot.cpp  iupPlotCalc.cpp iupPlot.cpp iupPlotDraw.cpp iupPlotTick.cpp iup_plot_attrib.cpp
+SRC += ../lang/iup_l10n.c
 
 ifneq ($(findstring MacOS, $(TEC_UNAME)), )
   INCLUDES += $(X11_INC)

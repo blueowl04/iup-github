@@ -2,7 +2,7 @@ PROJNAME = iup
 LIBNAME = iupcontrols
 OPT = YES
 
-INCLUDES = ../include ../src . ../srccd
+INCLUDES = ../include ../src . ../srccd ../lang
 
 SRCMATRIXEX = iup_matrixex.c iupmatex_clipboard.c iupmatex_busy.c \
               iupmatex_export.c iupmatex_visible.c iupmatex_copy.c \
@@ -20,6 +20,7 @@ SRC = iup_controls.c \
       iup_matrixlist.c \
       $(SRCMATRIX) \
       $(SRCMATRIXEX)
+SRC += ../lang/iup_l10n.c
 
 LIBS = iup iupcd
 LDIR = ../lib/$(TEC_UNAME)

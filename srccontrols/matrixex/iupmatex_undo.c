@@ -19,6 +19,7 @@
 #include "iup_attrib.h"
 #include "iup_str.h"
 #include "iup_assert.h"
+#include "iup_l10n.h"
 #include "iup_matrixex.h"
 
 
@@ -426,74 +427,9 @@ void iupMatrixExSetClassUpdateUndo(Iclass* ic)
     IupSetLanguageString("IUP_EDITCELL", "Edit Cell");
     IupSetLanguageString("IUP_CLEARVALUE", "Clear Value");
   }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "PORTUGUESE"))
+  else
   {
-    IupSetLanguageString("IUP_PASTECLIP", "Colar do Clipboard");
-    IupSetLanguageString("IUP_PASTEDATA", "Colar de um Buffer");
-    IupSetLanguageString("IUP_PASTEFILE", "Colar de Arquivo (Importar)");
-    IupSetLanguageString("IUP_COPYCOLTO_ALL", "Copiar para Todas as Linhas");
-    IupSetLanguageString("IUP_COPYCOLTO_TOP", "Copiar para Topo");
-    IupSetLanguageString("IUP_COPYCOLTO_BOTTOM", "Copiar para fim");
-    IupSetLanguageString("IUP_COPYCOLTO_MARKED", "Copiar para Selecionadas");
-    IupSetLanguageString("IUP_COPYCOLTO_INTERVAL", "Copiar para Intervalo");
-    IupSetLanguageString("IUP_UNDONAME", "Desfazer");
-    IupSetLanguageString("IUP_REDONAME", "Refazer");
-    IupSetLanguageString("IUP_SETCELL", "Modificar C�lula");
-    IupSetLanguageString("IUP_EDITCELL", "Editar C�lula");
-    IupSetLanguageString("IUP_CLEARVALUE", "Limpar Valores");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      IupSetLanguageString("IUP_SETCELL", "Modificar Célula");
-      IupSetLanguageString("IUP_EDITCELL", "Editar Célula");
-    }
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "SPANISH"))
-  {
-    IupSetLanguageString("IUP_PASTECLIP", "Pegar Desde el Portapapeles");
-    IupSetLanguageString("IUP_PASTEDATA", "Pegar Desde el Buffer");
-    IupSetLanguageString("IUP_PASTEFILE", "Pegar Desde Archivo (Importar)");
-    IupSetLanguageString("IUP_COPYCOLTO_ALL", "Copiar Para Todas las Lineas");
-    IupSetLanguageString("IUP_COPYCOLTO_TOP", "Copiar Para Arriba");
-    IupSetLanguageString("IUP_COPYCOLTO_BOTTOM", "Copiar Para Abajo");
-    IupSetLanguageString("IUP_COPYCOLTO_MARKED", "Copiar Para Seleccionadas");
-    IupSetLanguageString("IUP_COPYCOLTO_INTERVAL", "Copiar Para Intervalo");
-    IupSetLanguageString("IUP_UNDONAME", "Deshacer");
-    IupSetLanguageString("IUP_REDONAME", "Rehacer");
-    IupSetLanguageString("IUP_SETCELL", "Modificar Celda");
-    IupSetLanguageString("IUP_EDITCELL", "Editar Celda");
-    IupSetLanguageString("IUP_CLEARVALUE", "Limpiar Valores");
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
-  {
-    IupSetLanguageString("IUP_PASTECLIP", "Vlozit ze schr�nky");
-    IupSetLanguageString("IUP_PASTEDATA", "Vlozit z bufferu");
-    IupSetLanguageString("IUP_PASTEFILE", "Vlozit ze souboru (import)");
-    IupSetLanguageString("IUP_COPYCOLTO_ALL", "Kop�rovat do vsech r�dku");
-    IupSetLanguageString("IUP_COPYCOLTO_TOP", "Kop�rovat nahoru");
-    IupSetLanguageString("IUP_COPYCOLTO_BOTTOM", "Kop�rovat dolu");
-    IupSetLanguageString("IUP_COPYCOLTO_MARKED", "Kop�rovat do oznacen�ho");
-    IupSetLanguageString("IUP_COPYCOLTO_INTERVAL", "Kop�rovat do rozsahu");
-    IupSetLanguageString("IUP_UNDONAME", "Zpet");  /* To avoid conflict with the menu item string */
-    IupSetLanguageString("IUP_REDONAME", "Znovu");
-    IupSetLanguageString("IUP_SETCELL", "Nastavit bunku");
-    IupSetLanguageString("IUP_EDITCELL", "Upravit bunku");
-    IupSetLanguageString("IUP_CLEARVALUE", "Smazat hodnotu");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      IupSetLanguageString("IUP_PASTECLIP", "Vložit ze schránky");
-      IupSetLanguageString("IUP_PASTEDATA", "Vložit z bufferu");
-      IupSetLanguageString("IUP_PASTEFILE", "Vložit ze souboru (import)");
-      IupSetLanguageString("IUP_COPYCOLTO_ALL", "Kopírovat do všech řádků");
-      IupSetLanguageString("IUP_COPYCOLTO_TOP", "Kopírovat nahoru");
-      IupSetLanguageString("IUP_COPYCOLTO_BOTTOM", "Kopírovat dolů");
-      IupSetLanguageString("IUP_COPYCOLTO_MARKED", "Kopírovat do označeného");
-      IupSetLanguageString("IUP_COPYCOLTO_INTERVAL", "Kopírovat do rozsahu");
-      IupSetLanguageString("IUP_UNDONAME", "Zpět");  /* To avoid conflict with the menu item string */
-      IupSetLanguageString("IUP_SETCELL", "Nastavit buňku");
-      IupSetLanguageString("IUP_EDITCELL", "Upravit buňku");
-    }
+    iupSetLangStrings(IupGetGlobal("LANGUAGE"), IupGetInt(NULL, "UTF8MODE"), "matrixex_undo");
   }
 }
 

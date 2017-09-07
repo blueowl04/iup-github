@@ -1,0 +1,1009 @@
+###################
+--- stdmessages ---
+###################
+
+IUP_ERROR  # dialog title
+Error!
+Chyba!
+
+IUP_ATTENTION  # dialog title
+Attention!
+Upozornění!
+
+IUP_YES
+Yes
+Ano
+
+IUP_NO
+No
+Ne
+
+IUP_INVALIDDIR  # error text in a dialog
+Invalid directory.
+Neplatný adresář.
+
+IUP_FILEISDIR  # error text in a dialog
+The selected name is a directory.
+Vybraný soubor je adresářem.
+
+IUP_FILENOTEXIST  # error text in a dialog
+File does not exist.
+Soubor neexistuje.
+
+IUP_FILEOVERWRITE  # question in in ask dialog
+Overwrite existing file?
+Přepsat existující soubor?
+
+IUP_CREATEFOLDER
+Create Folder
+Vytvořit složku.
+
+IUP_NAMENEWFOLDER  # label in a file dialog
+Name of the new folder:
+Název nové složky:
+
+IUP_SAVEAS  # file dialog title
+Save As
+Uložit jako
+
+IUP_OPEN  # file dialog title
+Open
+Otevřít
+
+IUP_SELECTDIR  # file dialog title
+Select Directory
+Vybrat adresář
+
+IUP_OK  # OK button label
+OK
+OK
+
+IUP_CANCEL  # Cancel button label
+Cancel
+Storno
+
+IUP_RETRY  # button label
+Retry
+Opakovat
+
+IUP_APPLY  # button label
+Apply
+Použít
+
+IUP_RESET  # button label
+Reset
+Resetovat
+
+IUP_GETCOLOR  # color dialog title
+Color Selection
+Výběr barvy
+
+IUP_HELP  # button label
+Help
+Nápověda
+
+IUP_RED  # color label in color dialog
+&Red:
+Če&rvená:
+
+IUP_GREEN  # color label in color dialog
+&Green:
+&Zelená:
+
+IUP_BLUE  # color label in color dialog
+&Blue:
+&Modrá:
+
+IUP_HUE  # hue label in color dialog
+&Hue:
+&Odstín:
+
+IUP_SATURATION  # saturation label in color dialog
+&Saturation:
+&Sytost:
+
+IUP_INTENSITY  # intensity label in color dialog
+&Intensity:
+&Intenzita:
+
+IUP_OPACITY  # opacity label in color dialog
+&Opacity:
+&Krytí:
+
+IUP_PALETTE  # palette label in color dialog
+&Palette:
+&Paleta:
+
+IUP_TRUE
+True
+Pravda
+
+IUP_FALSE
+False
+Nepravda
+
+IUP_FAMILY  # font family
+Family:
+Rodina:
+
+IUP_STYLE  # font style
+Style:
+Styl:
+
+IUP_SIZE  # font size
+Size:
+Velikost:
+
+IUP_SAMPLE  # sample displaying selected font
+Sample:
+Vzorek:
+
+IUP_ERRORFILEOPEN  # error text in a dialog
+Failed to open file.
+Nepodařilo se otevřít soubor.
+
+IUP_ERRORFILESAVE  # error text in a dialog
+Failed to save file.
+Nepodařilo se uložit soubor.
+
+IUP_LUAERROR  # title of an error dialog
+Lua Error
+Chyba Luy
+
+IUP_CONTINUE  # button label
+Continue
+Pokračovat
+
+IUP_COPYTOCLIPBOARD  # tooltip for Copy button
+Copy text to clipboard.
+Kopírovat text do schránky.
+
+IUP_COPY  # button label
+Copy
+Kopírovat
+
+IUP_EXIT  # button label
+Exit
+Ukončit
+
+
+############
+--- plot ---
+############
+
+IUP_EXPORT  # menu item
+Export
+Exportovat
+
+IUP_COPY  # menu item
+Copy
+Kopírovat
+
+IUP_PRINTDLG  # menu item
+Print...
+Tisk...
+
+IUP_ZOOMINAC  # menu item
+Zoom In\t+
+Přiblížit\t+
+
+IUP_ZOOMOUTAC  # menu item
+Zoom Out\t-
+Oddálit\t-
+
+IUP_RESETZOOMAC  # menu item
+Reset Zoom\t.
+Zobrazení 1:1\t.
+
+IUP_SHOWHIDELEGEND  # menu item
+Show/Hide Legend
+Zobrazit/skrýt legendu
+
+IUP_SHOWHIDEGRID  # menu item
+Show/Hide Grid
+Zobrazit/skrýt mřížku
+
+IUP_ERRORINVALIDFORMULA  # error text
+Invalid Formula.
+Neplatný vzorec.
+
+IUP_PROPERTIESDLG  # menu item and dialog title
+Properties...
+Vlastnosti...
+
+IUP_DATASETPROPERTIESDLG  # menu item and dialog title
+Data Set Properties...
+Vlastnosti datové sady...
+
+IUP_DATASETVALUESDLG  # menu item and dialog title
+Data Set Values...
+Hodnoty datové sady...
+
+IUP_NAME  # name of data set (label in a dialog)
+Name:
+Název:
+
+IUP_COLOR  # color of data set (label in a dialog)
+Color:
+Barva:
+
+IUP_MODE  # mode of data set (label for a dropbox)
+Mode:
+Mód
+
+IUP_LINES  # mode value of IUP_MODE (dropbox item)
+Lines
+Čáry
+
+IUP_MARKS  # mode value of IUP_MODE (dropbox item)
+Marks
+Značky
+
+IUP_MARKSLINES  # mode value of IUP_MODE (dropbox item)
+Marks & Lines
+Značky a čáry
+
+IUP_BARS  # mode value of IUP_MODE (dropbox item)
+Bars
+Sloupce
+
+IUP_AREA  # mode value of IUP_MODE (dropbox item)
+Area
+Plocha
+
+IUP_STEMS  # mode value of IUP_MODE (dropbox item)
+Stems
+Stonky
+
+IUP_MARKSSTEMS  # mode value of IUP_MODE (dropbox item)
+Marks & Stems
+Značky & stonky
+
+IUP_HORIZONTALBARS  # mode value of IUP_MODE (dropbox item)
+Horizontal Bars
+Podélné sloupce
+
+IUP_MULTIBARS  # mode value of IUP_MODE (dropbox item)
+Multiple Bars
+Vícenásobné sloupce
+
+IUP_ERRORBARS  # mode value of IUP_MODE (dropbox item)
+Error Bars
+Chybové sloupce
+
+IUP_STEPS  # mode value of IUP_MODE (dropbox item)
+Steps
+Kroky
+
+IUP_PIE  # mode value of IUP_MODE (dropbox item)
+Pie
+Koláč
+
+IUP_LINESTYLE  # line style (label for a dropbox)
+Line Style:
+Styl čáry:
+
+IUP_CONTINUOUS  # line style value of IUP_LINESTYLE (dropbox item)
+Continuous
+Souvislá
+
+IUP_DASHED  # line style value of IUP_LINESTYLE (dropbox item)
+Dashed
+Čárkovaná
+
+IUP_DOTTED  # line style value of IUP_LINESTYLE (dropbox item)
+Dotted
+Tečkovaná
+
+IUP_DASH_DOT  # line style value of IUP_LINESTYLE (dropbox item)
+Dash Dot
+Čárka, tečka
+
+IUP_DASH_DOT_DOT  # line style value of IUP_LINESTYLE (dropbox item)
+Dash Dot Dot
+Čárka, tečka, tečka
+
+IUP_LINEWIDTH  # line width of data set (label in a dialog)
+Line Width:
+Šířka čáry:
+
+IUP_MARKSTYLE  # property of data set (label in a dialog)
+Mark Style:
+Styl značky:
+
+IUP_BAROUTLINE  # property of data set (label in a dialog)
+Bar Outline:
+Obrys sloupce:
+
+IUP_BARSPACING  # property of data set (label in a dialog)
+Bar Spacing:
+Vzdálenost mezi sloupci:
+
+IUP_BAROUTLINECOLOR  # property of data set (label in a dialog)
+Bar Outline Color:
+Barva obrysu sloupce:
+
+IUP_PLUS  # value of IUP_MARKSTYLE (dropbox item)
+Plus
+Plus
+
+IUP_STAR  # value of IUP_MARKSTYLE (dropbox item)
+Star
+Hvězdička
+
+IUP_CIRCLE  # value of IUP_MARKSTYLE (dropbox item)
+Circle
+Kroužek
+
+IUP_X  # value of IUP_MARKSTYLE (dropbox item)
+X
+X
+
+IUP_MARK_BOX  # value of IUP_MARKSTYLE (dropbox item)
+Box
+Čtvereček
+
+IUP_DIAMOND  # value of IUP_MARKSTYLE (dropbox item)
+Diamond
+Diamant
+
+IUP_HOLLOW_CIRCLE  # value of IUP_MARKSTYLE (dropbox item)
+Hollow Circle
+Prázdný kroužek
+
+IUP_HOLLOW_BOX  # value of IUP_MARKSTYLE (dropbox item)
+Hollow Box
+Prázdný čtvereček
+
+IUP_HOLLOW_DIAMOND  # value of IUP_MARKSTYLE (dropbox item)
+Hollow Diamond
+Prázdný diamant
+
+IUP_MARKSIZE  # property of data set (label in a dialog)
+Mark Size:
+Velikost značky:
+
+IUP_AREATRANSPARENCY  # property of data set (label in a dialog)
+Area Transparency:
+Průhlednost plochy:
+
+IUP_PIERADIUS  # property of data set for Pie chart (label in a dialog)
+Pie Radius:
+Poloměr koláče:
+
+IUP_PIESTARTANGLE  # property of data set for Pie chart (label in a dialog)
+Pie Start Angle:
+Úhel počátku koláče:
+
+IUP_PIECONTOUR  # property of data set for Pie chart (label in a dialog)
+Pie Contour:
+Obrys koláče:
+
+IUP_PIEHOLE  # property of data set for Pie chart (label in a dialog)
+Pie Hole:
+Otvor v koláči:
+
+IUP_PIESLICELABEL  # property of data set for Pie chart (label in a dialog)
+Pie Slice Label:
+Popis dílu koláče:
+
+IUP_PIESLICELABELPOS  # property of data set for Pie chart (label in a dialog)
+Pie Slice Label Pos.:
+Pozice popisku dílu koláče:
+
+IUP_PERCENT  # value of IUP_PIESLICELABEL property (dropbox item)
+Percent
+Procenta
+
+IUP_NONE  # value of IUP_PIESLICELABEL property (dropbox item)
+None
+Nic
+
+IUP_CLOSE  # dialog button
+Close
+Zavřít
+
+IUP_BACKGROUND  # plot background (label in a tree)
+Background
+Pozadí
+
+IUP_TITLE  # plot title (label in a tree)
+Title
+Název
+
+IUP_LEGEND  # plot legend (label in a tree)
+Legend
+Legenda
+
+IUP_LEGENDBOX  # box around the plot legend (label in a tree)
+Legend Box
+Rámeček legendy
+
+IUP_BOX  # box around the plot (label in a tree)
+Box
+Ohraničení
+
+IUP_GRID  # main grid used for the plot (label in a tree)
+Grid
+Mřížka
+
+IUP_GRIDMINOR  # secondary grid used for the plot (label in a tree)
+Grid Minor
+Sekundární mřížka
+
+IUP_XAXIS  # X axis (label in a tree)
+X Axis
+Osa X
+
+IUP_YAXIS  # Y axis (label in a tree)
+Y Axis
+Osa Y
+
+IUP_AXISLABEL  # description of an axis (label in a tree)
+Axis Label
+Popis osy
+
+IUP_AXISTICKS  # settings of axis ticks (label in a tree)
+Axis Ticks
+Dílky osy
+
+IUP_AXISTICKSNUMBER  # settings of axis tics numbers (label in a tree)
+Axis Ticks Number
+Čísla dílků osy
+
+IUP_TEXT  # axis name (text field label in a dialog)
+Text:
+Text:
+
+IUP_SHOW  # checkbox name
+Show:
+Zobrazit:
+
+IUP_HORIZONTAL  # orientation of a grid lines (item in a drobox)
+Horizontal
+Vodorovně
+
+IUP_VERTICAL  # orientation of a grid lines (item in a drobox)
+Vertical
+Svisle
+
+IUP_CHANGESNOTAPPLIEDAPPLY
+Changes Not Applied. Apply?
+Změny nebyly provedeny. Provést?
+
+IUP_MARGIN
+Margin
+Okraj
+
+IUP_LEFT  # left margin
+Left:
+Levý:
+
+IUP_RIGHT  # right margin
+Right:
+Pravý:
+
+IUP_TOP  # top margin
+Top:
+Nahoře:
+
+IUP_BOTTOM  # bottom margin
+Bottom:
+Dole:
+
+IUP_FONTSTYLE
+Font Style:
+Styl písma:
+
+IUP_FONTSIZE
+Font Size:
+Velikost písma:
+
+IUP_PLAIN  # value for IUP_FONTSTYLE (dropbox item)
+Plain
+Obyčejné
+
+IUP_BOLD  # value for IUP_FONTSTYLE (dropbox item)
+Bold
+Tučné
+
+IUP_ITALIC  # value for IUP_FONTSTYLE (dropbox item)
+Italic
+Kurzíva
+
+IUP_BOLDITALIC  # value for IUP_FONTSTYLE (dropbox item)
+Bold Italic
+Tučná kurzíva
+
+IUP_POSITION  # position of plot legend (dropbox label)
+Position:
+Poloha:
+
+IUP_POSXY  # text field label
+(x,y):
+(x,y):
+
+IUP_TOPRIGHT  # position of plot legend (dropbox item)
+Top Right
+Vpravo nahoře
+
+IUP_TOPLEFT  # position of plot legend (dropbox item)
+Top Left
+Vlevo nahoře
+
+IUP_BOTTOMRIGHT  # position of plot legend (dropbox item)
+Bottom Right
+Vpravo dole
+
+IUP_BOTTOMLEFT  # position of plot legend (dropbox item)
+Bottom Left
+Vlevo dole
+
+IUP_BOTTOMCENTER  # position of plot legend (dropbox item)
+Bottom Center
+Dole uprostřed
+
+IUP_XY  # position of plot legend (dropbox item)
+(x,y)
+(x,y)
+
+IUP_SHOWARROW  # checkbox label
+Show Arrow:
+Zobrazit šipky:
+
+IUP_MIN  # checkbox label
+Min:
+Min:
+
+IUP_MAX  # checkbox label
+Max:
+Max:
+
+IUP_REVERSE  # checkbox label
+Reverse:
+Obráceně:
+
+IUP_CROSSORIGIN  # checkbox label
+Cross Origin:
+Počátek souřadnic:
+
+IUP_CENTERED  # checkbox label
+Centered:
+Centrovaně:
+
+IUP_SCALE  # dropbox label
+Scale:
+Měřítko:
+
+IUP_LINEAR  # value of IUP_SCALE (dropbox item)
+Linear
+Lineární
+
+IUP_LOG10  # value of IUP_SCALE (dropbox item)
+Logarithm (base 10)
+Logaritmické (základ 10)
+
+IUP_LOG2  # value of IUP_SCALE (dropbox item)
+Logarithm (base 2)
+Logaritmické (základ 2)
+
+IUP_LOGN  # value of IUP_SCALE (dropbox item)
+Logarithm (base e)
+Logaritmické (základ e)
+
+IUP_SPACING  # checkbox label
+Spacing:
+Vzdálenost:
+
+IUP_MAJORSPAN  # spacing for major division of axis ticks (text field label)
+Major Span:
+Hlavní rozsah:
+
+IUP_MINORDIVISION  # spacing for minor division of axis ticks (text field label)
+Minor Division:
+Vedlejší rozsah:
+
+IUP_SIZE  # size of axis ticks (checkbox label)
+Size:
+Velikost:
+
+IUP_MAJOR  # size for major axis ticks (text field label)
+Major:
+Hlavní:
+
+IUP_MINOR  # size for minor axis ticks (text field label)
+Minor:
+Vedlejší:
+
+IUP_ROTATE  # rotation of axis ticks numbers (checkbox label)
+Rotate:
+Otočit:
+
+IUP_ANGLE  # rotation angle of axis ticks numbers (text field label)
+Angle:
+Úhel:
+
+IUP_VALUE  # value for a parameter (spinbox label)
+Value:
+Hodnota:
+
+IUP_DECIMALS  # number of decimals for axis ticks numbers (spinbox label)
+Decimals:
+Desetiny:
+
+IUP_FORMAT  # axis ticks numbers format (checkbox label)
+Format:
+Formát:
+
+
+##############
+--- matrix ---
+##############
+
+IUP_ERRORINVALIDFORMULA  # error text
+Invalid Formula.
+Neplatný vzorec.
+
+
+################
+--- matrixex ---
+################
+
+IUP_EXPORT  # export to a format (menu item)
+Export
+Exportovat
+
+IUP_IMPORT  # menu item
+Import
+Importovat
+
+IUP_SETTINGSDLG  # menu item for opening a settings dialog
+Settings...
+Nastavení...
+
+IUP_TEXTSEPARATOR  # dropbox label
+Number Separator:
+Oddělovač čísel:
+
+IUP_OTHERTEXTSEPARATOR  # textbox label
+  - Other Num. Sep.:
+Další oddělovač čísel:
+
+IUP_DECIMALSYMBOL  # spinbox label
+Decimal Symbol:
+Desetinný symbol:
+
+IUP_UNDOAC  # menu item
+Undo\tCtrl+Z
+Zpět\tCtrl+Z
+
+IUP_REDOAC  # menu item
+Redo\tCtrl+Y
+Znovu\tCtrl+Y
+
+IUP_UNDOLISTDLG  # menu item
+Undo List...\tCtrl+U
+Historie změn...\tCtrl+U
+
+IUP_UNDOLIST  # menu item
+Undo List
+Historie změn
+
+IUP_CURRENTSTATE  # item in history change list
+Current State
+Aktuální stav
+
+IUP_CUTAC  # menu item
+Cut\tCtrl+X
+Vyjmout\tCtrl+X
+
+IUP_COPYAC  # menu item
+Copy\tCtrl+C
+Kopírovat\tCtrl+C
+
+IUP_PASTEAC  # menu item
+Paste\tCtrl+V
+Vložit\tCtrl+V
+
+IUP_ERASEAC  # menu item
+Erase\tDel
+Smazat\tDel
+
+IUP_SELECTALLAC  # menu item
+Select All\tCtrl+A
+Vybrat vše\tCtrl+A
+
+IUP_FINDDLG  # menu item
+Find...\tCtrl+F
+Najít...\tCtrl+F
+
+IUP_GOTODLG  # menu item
+Go To...\tCtrl+G
+Jít na...\tCtrl+G
+
+IUP_SORTDLG  # menu item
+Sort...
+Seřadit...
+
+IUP_FREEZE  # menu item
+Freeze
+Ukotvit buňky
+
+IUP_UNFREEZE  # menu item
+Unfreeze
+Uvolnit buňky
+
+IUP_COPYTOSAMECOLUMN  # submenu item
+Copy To (Same Column)
+Kopírovat do (stejný sloupec)
+
+IUP_ALLLINES  # submenu item
+All lines
+Všech řádku
+
+IUP_HERETOTOP  # submenu item
+Here to top
+Odtud nahoru
+
+IUP_HERETOBOTTOM  # submenu item
+Here to bottom
+Odtud dolů
+
+IUP_INTERVALDLG  # submenu item
+Interval...
+Rozsah...
+
+IUP_SELECTEDLINES  # submenu item
+Selected lines
+Vybrat řádky
+
+IUP_VISIBILITY  # menu item
+Visibility
+Viditelnost
+
+IUP_HIDECOLUMN  # submenu item
+Hide Column
+Skrýt sloupec
+
+IUP_SHOWHIDDENCOLUMNS  # submenu item
+Show Hidden Columns
+Zobrazit skryté sloupce
+
+IUP_HIDELINE  # submenu item
+Hide Line
+Skrýt řádek
+
+IUP_SHOWHIDDENLINES  # submenu item
+Show Hidden Lines
+Zobrazit skryté řádky
+
+IUP_COPYTOINTERVAL  # submenu item
+Copy To - Interval
+Kopírovat do - rozsah
+
+IUP_GOTO  # dialog title for IUP_GOTODLG
+Go To
+Jít na
+
+IUP_LINE  # spinbox label
+Line:
+Řádek:
+
+IUP_COLUMN  # spinbox label
+Column:
+Sloupec:
+
+IUP_LINESTART  # spinbox label
+Line Start:
+Počáteční řádek:
+
+IUP_LINEEND  # spinbox label
+Line End:
+Koncový řádek:
+
+IUP_UNITS  # label
+Units:
+Jednotky:
+
+IUP_DECIMALS  # number of decimals for numbers in matrix (spinbox label)
+Decimals:
+Desetinná místa:
+
+IUP_COLUMNDECIMALS  # dialog title for IUP_COLUMNDECIMALSDLG
+Column Decimals
+Desetinná místa sloupce
+
+IUP_COLUMNDECIMALSDLG  # menu item
+Column Decimals...
+Desetinná místa sloupce...
+
+IUP_COLUMNUNITS  # dialog title for IUP_COLUMNUNITSDLG
+Column Units
+Jednotky sloupce
+
+IUP_COLUMNUNITSDLG  # menu item
+Column Units...
+Jednotky sloupce...
+
+IUP_ERRORINVALIDSELECTION  # error text
+Invalid Selection.
+Neplatný výběr.
+
+IUP_ERRORNOTEXT  # error text
+Empty Text.
+Prázdný text.
+
+IUP_ERRORINVALIDDATA  # error text
+Invalid Data.
+Neplatná data.
+
+IUP_ERRORNOSELECTION  # error text
+Empty Selection.
+Prázdný výběr.
+
+IUP_ERRORINVALIDINTERVAL  # error text
+Invalid Interval.
+Neplatný rozsah.
+
+
+#####################
+--- matrixex_find ---
+#####################
+
+IUP_FIND  # dialog title of IUP_FINDDLG dialog
+Find
+Najít
+
+IUP_FIND_WHAT  # text to find in matrixex (text field label)
+Find what:
+Najít co:
+
+IUP_FIND_NEXT  # button label in IUP_FINDDLG
+Find &Next
+Najít &následující
+
+IUP_FIND_PREVIOUS  # button label in IUP_FINDDLG
+Find &Previous
+Najít &předcházející
+
+IUP_NOT_FOUND  # find result text
+Not found.
+Nenalezeno.
+
+IUP_FOUND_AT  # find result text
+Found at
+Nalezeno na
+
+IUP_CLOSE  # button label in IUP_FINDDLG
+Close
+Zavřít
+
+IUP_SEARCH  # group name in IUP_FINDDLG
+Search
+Hledat
+
+IUP_MATCH_CASE  # checkbox label
+Match Case
+Rozlišovat velikost písmen
+
+IUP_MATCH_WHOLE_CELL  # checkbox label
+Match Whole Cell
+Porovnat celou buňku
+
+IUP_BY_ROW  # searching option (radiobutton label)
+by Rows
+po řádcích
+
+IUP_BY_COL  # searching option (radiobutton label)
+by Columns
+po sloupcích
+
+
+#####################
+--- matrixex_sort ---
+#####################
+
+IUP_SORTBYCOLUMN  # sorting dialog title
+Sort Lines by Column
+Řadit podle sloupců
+
+IUP_INVERT  # button label
+Invert
+Invertovat
+
+IUP_SORT  # button label
+Sort
+Seřadit
+
+IUP_INVERT_TIP  # button tooltip
+Just invert the current sort. New parameters are ignored.
+Invertuje pouze aktuální řazení. Nové parametry jsou ignorovány.
+
+IUP_ORDER  # group name in sort dialog
+Order
+Pořadí
+
+IUP_ASCENDING  # sorting option (radiobutton label)
+Ascending
+Vzestupně
+
+IUP_DESCENDING  # sorting option (radiobutton label)
+Descending
+Sestupně
+
+IUP_ALLLINES  # filter for sorting
+All Lines
+Všechny řádky
+
+IUP_CASESENSITIVE  # checkbox label
+Case Sensitive
+Rozlišovat velikost písmen
+
+IUP_COLUMN  # filter for sorting
+Column
+Sloupec
+
+IUP_FIRSTLINE  # filter for sorting
+First Line
+První řádek
+
+IUP_LASTLINE  # filter for sorting
+Last Line
+Poslední řádek
+
+
+#####################
+--- matrixex_undo ---
+#####################
+
+IUP_PASTECLIP  # action in history change list
+Paste from Clipboard
+Vložit ze schránky
+
+IUP_PASTEDATA  # action in history change list
+Paste from Buffer
+Vložit z bufferu
+
+IUP_PASTEFILE  # action in history change list
+Paste from File (Import)
+Vložit ze souboru (import)
+
+IUP_COPYCOLTO_ALL  # action in history change list
+Copy To All Lines
+Kopírovat do všech řádků
+
+IUP_COPYCOLTO_TOP  # action in history change list
+Copy To Top
+Kopírovat nahoru
+
+IUP_COPYCOLTO_BOTTOM  # action in history change list
+Copy To Bottom
+Kopírovat dolů
+
+IUP_COPYCOLTO_MARKED  # action in history change list
+Copy To Marked
+Kopírovat do označeného
+
+IUP_COPYCOLTO_INTERVAL  # action in history change list
+Copy To Interval
+Kopírovat do rozsahu
+
+IUP_UNDONAME  # action prefix in history change list
+Undo
+Zpět
+
+IUP_REDONAME  # action prefix in history change list
+Redo
+Opakovat
+
+IUP_SETCELL  # action in history change list
+Set Cell
+Nastavit buňku
+
+IUP_EDITCELL  # action in history change list
+Edit Cell
+Upravit buňku
+
+IUP_CLEARVALUE  # action in history change list
+Clear Value
+Smazat hodnotu

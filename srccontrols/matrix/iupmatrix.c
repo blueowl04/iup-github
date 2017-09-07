@@ -34,6 +34,7 @@
 #include "iup_register.h"
 #include "iup_assert.h"
 #include "iup_flatscrollbar.h"
+#include "iup_l10n.h"
 
 #include "iupmat_def.h"
 #include "iupmat_getset.h"
@@ -2123,38 +2124,9 @@ static void iMatrixSetClassUpdate(Iclass* ic)
   {
     IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Invalid Formula.");
   }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "PORTUGUESE"))
+  else
   {
-    IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "FÛrmula Inv·lida.");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-      IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "F√≥rmula Inv√°lida.");
-    }
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "SPANISH"))
-  {
-    IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "FÛrmula Inv·lida.");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-      IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "F√≥rmula Inv√°lida.");
-    }
-  }
-  else if (iupStrEqualNoCase(IupGetGlobal("LANGUAGE"), "CZECH"))
-  {
-    IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Neplatn˝ vzorec.");
-
-    if (IupGetInt(NULL, "UTF8MODE"))
-    {
-      /* When seeing this file assuming ISO8859-1 encoding, above will appear correct.
-      When seeing this file assuming UTF-8 encoding, bellow will appear correct. */
-      IupSetLanguageString("IUP_ERRORINVALIDFORMULA", "Neplatn√Ω vzorec.");
-    }
+    iupSetLangStrings(IupGetGlobal("LANGUAGE"), IupGetInt(NULL, "UTF8MODE"), "matrix");
   }
 }
 
